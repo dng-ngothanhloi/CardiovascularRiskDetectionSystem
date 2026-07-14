@@ -1,0 +1,23 @@
+{
+  "initial_count": 70000,
+  "used_eda_outputs": false,
+  "final_count": 69992,
+  "final_columns": [
+    "id",
+    "age",
+    "gender",
+    "height",
+    "weight",
+    "ap_hi",
+    "ap_lo",
+    "cholesterol",
+    "gluc",
+    "smoke",
+    "alco",
+    "active",
+    "cardio"
+  ],
+  "missing_after_imputation": 0,
+  "duplicates_removed": 0,
+  "positive_class_ratio": 0.4996999657103669
+}

@@ -1,0 +1,40 @@
+{
+  "variables": [
+    "age",
+    "cholesterol",
+    "ap_hi",
+    "ap_lo"
+  ],
+  "pc_algorithm": {
+    "method": "Correlation_based",
+    "edges": [],
+    "correlation_matrix": {
+      "age": {
+        "age": 1.0,
+        "cholesterol": 0.15442374182535876,
+        "ap_hi": 0.020764319327034205,
+        "ap_lo": 0.01764743402393543
+      },
+      "cholesterol": {
+        "age": 0.15442374182535876,
+        "cholesterol": 1.0,
+        "ap_hi": 0.023777921557725793,
+        "ap_lo": 0.024019290309646148
+      },
+      "ap_hi": {
+        "age": 0.020764319327034205,
+        "cholesterol": 0.023777921557725793,
+        "ap_hi": 1.0,
+        "ap_lo": 0.016085513403423343
+      },
+      "ap_lo": {
+        "age": 0.01764743402393543,
+        "cholesterol": 0.024019290309646148,
+        "ap_hi": 0.016085513403423343,
+        "ap_lo": 1.0
+      }
+    },
+    "graph_file": "artifacts/eda/causal_dag_correlation.png"
+  },
+  "notears": {}
+}

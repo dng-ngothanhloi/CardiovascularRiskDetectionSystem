@@ -1,0 +1,14 @@
+{
+  "age": "Age (days)",
+  "height": "Height (cm)",
+  "weight": "Weight (kg)",
+  "gender": "Gender (1=female,2=male)",
+  "ap_hi": "Systolic blood pressure",
+  "ap_lo": "Diastolic blood pressure",
+  "cholesterol": "Cholesterol (1=normal, 2=above normal, 3=well above normal)",
+  "gluc": "Glucose (1=normal, 2=above normal, 3=well above normal)",
+  "smoke": "Smoking (0/1)",
+  "alco": "Alcohol intake (0/1)",
+  "active": "Physical activity (0/1)",
+  "cardio": "Cardiovascular disease (target)"
+}

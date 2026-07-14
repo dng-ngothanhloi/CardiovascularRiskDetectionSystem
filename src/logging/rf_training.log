@@ -1,0 +1,480 @@
+2026-07-15 06:02:33 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 750, 'max_depth': 15, 'max_features': 0.37988294927683675, 'min_samples_leaf': 2, 'class_weight': 'balanced', 'random_state': 42, 'n_jobs': -1}
+2026-07-15 06:02:33 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:02:47 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:02:48 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 950, 'max_depth': 15, 'max_features': 0.9270075654154936, 'min_samples_leaf': 14, 'class_weight': 'balanced', 'random_state': 42, 'n_jobs': -1}
+2026-07-15 06:02:48 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:03:21 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:03:21 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 200, 'max_depth': None, 'max_features': 0.3581694201214418, 'min_samples_leaf': 12, 'class_weight': 'balanced', 'random_state': 42, 'n_jobs': -1}
+2026-07-15 06:03:21 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:03:24 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:03:24 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 300, 'max_depth': 24, 'max_features': 'log2', 'min_samples_leaf': 5, 'class_weight': 'balanced', 'random_state': 42, 'n_jobs': -1}
+2026-07-15 06:03:24 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:03:28 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:03:28 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1350, 'max_depth': None, 'max_features': 0.8340706196901451, 'min_samples_leaf': 5, 'class_weight': 'balanced', 'random_state': 42, 'n_jobs': -1}
+2026-07-15 06:03:28 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:04:17 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:04:18 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 500, 'max_depth': 20, 'max_features': 'log2', 'min_samples_leaf': 4, 'class_weight': 'balanced', 'random_state': 42, 'n_jobs': -1}
+2026-07-15 06:04:18 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:04:23 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:04:24 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 750, 'max_depth': 21, 'max_features': 'log2', 'min_samples_leaf': 4, 'class_weight': 'balanced', 'random_state': 42, 'n_jobs': -1}
+2026-07-15 06:04:24 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:04:32 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:04:32 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1250, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 9, 'class_weight': 'balanced', 'random_state': 42, 'n_jobs': -1}
+2026-07-15 06:04:32 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:04:46 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:04:46 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 900, 'max_depth': None, 'max_features': 'log2', 'min_samples_leaf': 11, 'class_weight': 'balanced', 'random_state': 42, 'n_jobs': -1}
+2026-07-15 06:04:46 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:04:56 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:04:56 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 800, 'max_depth': None, 'max_features': 'log2', 'min_samples_leaf': 5, 'class_weight': 'balanced', 'random_state': 42, 'n_jobs': -1}
+2026-07-15 06:04:56 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:05:05 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:05:05 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1500, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 9, 'class_weight': 'balanced', 'random_state': 42, 'n_jobs': -1}
+2026-07-15 06:05:05 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:05:21 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:05:21 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1500, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 9, 'class_weight': 'balanced', 'random_state': 42, 'n_jobs': -1}
+2026-07-15 06:05:21 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:05:36 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:05:37 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1100, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 9, 'class_weight': 'balanced', 'random_state': 42, 'n_jobs': -1}
+2026-07-15 06:05:37 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:05:48 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:05:49 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1000, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 11, 'class_weight': 'balanced', 'random_state': 42, 'n_jobs': -1}
+2026-07-15 06:05:49 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:05:59 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:05:59 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1050, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 12, 'class_weight': 'balanced', 'random_state': 42, 'n_jobs': -1}
+2026-07-15 06:05:59 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:06:10 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:06:10 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1100, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 15, 'class_weight': 'balanced', 'random_state': 42, 'n_jobs': -1}
+2026-07-15 06:06:10 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:06:21 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:06:21 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1200, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 15, 'class_weight': 'balanced', 'random_state': 42, 'n_jobs': -1}
+2026-07-15 06:06:21 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:06:33 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:06:33 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1200, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 15, 'class_weight': 'balanced', 'random_state': 42, 'n_jobs': -1}
+2026-07-15 06:06:33 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:06:45 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:06:45 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1300, 'max_depth': None, 'max_features': 0.6075031523303945, 'min_samples_leaf': 15, 'class_weight': 'balanced', 'random_state': 42, 'n_jobs': -1}
+2026-07-15 06:06:45 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:07:17 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:07:18 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 600, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 14, 'class_weight': 'balanced', 'random_state': 42, 'n_jobs': -1}
+2026-07-15 06:07:18 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:07:23 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:07:24 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 550, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 13, 'class_weight': 'balanced', 'random_state': 42, 'n_jobs': -1}
+2026-07-15 06:07:24 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:07:29 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:07:29 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 550, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 14, 'class_weight': 'balanced', 'random_state': 42, 'n_jobs': -1}
+2026-07-15 06:07:29 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:07:34 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:07:35 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 550, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 13, 'class_weight': 'balanced', 'random_state': 42, 'n_jobs': -1}
+2026-07-15 06:07:35 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:07:40 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:07:40 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 450, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 14, 'class_weight': 'balanced', 'random_state': 42, 'n_jobs': -1}
+2026-07-15 06:07:40 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:07:45 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:07:45 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 450, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 13, 'class_weight': 'balanced', 'random_state': 42, 'n_jobs': -1}
+2026-07-15 06:07:45 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:07:50 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:07:50 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 650, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 11, 'class_weight': 'balanced', 'random_state': 42, 'n_jobs': -1}
+2026-07-15 06:07:50 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:07:57 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:07:57 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 350, 'max_depth': 6, 'max_features': 0.21630400188808774, 'min_samples_leaf': 14, 'class_weight': 'balanced', 'random_state': 42, 'n_jobs': -1}
+2026-07-15 06:07:57 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:08:00 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:08:00 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 650, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 14, 'class_weight': 'balanced', 'random_state': 42, 'n_jobs': -1}
+2026-07-15 06:08:00 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:08:06 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:08:06 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 650, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 12, 'class_weight': 'balanced', 'random_state': 42, 'n_jobs': -1}
+2026-07-15 06:08:06 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:08:13 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:08:13 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 400, 'max_depth': 30, 'max_features': 0.6909007750870261, 'min_samples_leaf': 1, 'class_weight': 'balanced', 'random_state': 42, 'n_jobs': -1}
+2026-07-15 06:08:13 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:08:27 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:08:27 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 650, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 14, 'class_weight': 'balanced', 'random_state': 42, 'n_jobs': -1}
+2026-07-15 06:08:27 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:08:33 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:08:34 - HeartDisease_RiskDiscovery - INFO - Feature importance saved to artifacts/Model/rf/fold_0/feature_importance.json
+2026-07-15 06:08:34 - HeartDisease_RiskDiscovery - INFO - RandomForest saved to artifacts/Model/rf/fold_0/model.joblib
+2026-07-15 06:08:35 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 800, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 5, 'class_weight': 'balanced', 'random_state': 43, 'n_jobs': -1}
+2026-07-15 06:08:35 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:08:43 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:08:44 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1150, 'max_depth': 21, 'max_features': 'log2', 'min_samples_leaf': 2, 'class_weight': 'balanced', 'random_state': 43, 'n_jobs': -1}
+2026-07-15 06:08:44 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:08:57 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:08:58 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 850, 'max_depth': 28, 'max_features': 'log2', 'min_samples_leaf': 7, 'class_weight': 'balanced', 'random_state': 43, 'n_jobs': -1}
+2026-07-15 06:08:58 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:09:07 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:09:07 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 200, 'max_depth': 12, 'max_features': 0.8626934345535643, 'min_samples_leaf': 1, 'class_weight': 'balanced', 'random_state': 43, 'n_jobs': -1}
+2026-07-15 06:09:07 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:09:12 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:09:12 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 300, 'max_depth': None, 'max_features': 'log2', 'min_samples_leaf': 10, 'class_weight': 'balanced', 'random_state': 43, 'n_jobs': -1}
+2026-07-15 06:09:12 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:09:15 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:09:16 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 450, 'max_depth': 10, 'max_features': 'log2', 'min_samples_leaf': 11, 'class_weight': 'balanced', 'random_state': 43, 'n_jobs': -1}
+2026-07-15 06:09:16 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:09:19 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:09:19 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 200, 'max_depth': 25, 'max_features': 0.5212680076168539, 'min_samples_leaf': 13, 'class_weight': 'balanced', 'random_state': 43, 'n_jobs': -1}
+2026-07-15 06:09:19 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:09:23 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:09:24 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1500, 'max_depth': None, 'max_features': 0.7567868287997576, 'min_samples_leaf': 15, 'class_weight': 'balanced', 'random_state': 43, 'n_jobs': -1}
+2026-07-15 06:09:24 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:10:03 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:10:04 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 700, 'max_depth': None, 'max_features': 0.677576950408, 'min_samples_leaf': 7, 'class_weight': 'balanced', 'random_state': 43, 'n_jobs': -1}
+2026-07-15 06:10:04 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:10:22 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:10:23 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1000, 'max_depth': None, 'max_features': 0.6469577897085829, 'min_samples_leaf': 11, 'class_weight': 'balanced', 'random_state': 43, 'n_jobs': -1}
+2026-07-15 06:10:23 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:10:47 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:10:47 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 500, 'max_depth': 6, 'max_features': 'sqrt', 'min_samples_leaf': 15, 'class_weight': 'balanced', 'random_state': 43, 'n_jobs': -1}
+2026-07-15 06:10:47 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:10:51 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:10:51 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 500, 'max_depth': None, 'max_features': 'log2', 'min_samples_leaf': 10, 'class_weight': 'balanced', 'random_state': 43, 'n_jobs': -1}
+2026-07-15 06:10:51 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:10:56 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:10:56 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 450, 'max_depth': 16, 'max_features': 'log2', 'min_samples_leaf': 10, 'class_weight': 'balanced', 'random_state': 43, 'n_jobs': -1}
+2026-07-15 06:10:56 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:11:00 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:11:00 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 500, 'max_depth': 15, 'max_features': 'log2', 'min_samples_leaf': 12, 'class_weight': 'balanced', 'random_state': 43, 'n_jobs': -1}
+2026-07-15 06:11:00 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:11:05 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:11:05 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 650, 'max_depth': 12, 'max_features': 'log2', 'min_samples_leaf': 12, 'class_weight': 'balanced', 'random_state': 43, 'n_jobs': -1}
+2026-07-15 06:11:05 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:11:11 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:11:11 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 650, 'max_depth': 8, 'max_features': 'log2', 'min_samples_leaf': 8, 'class_weight': 'balanced', 'random_state': 43, 'n_jobs': -1}
+2026-07-15 06:11:11 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:11:16 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:11:16 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1100, 'max_depth': 11, 'max_features': 'sqrt', 'min_samples_leaf': 13, 'class_weight': 'balanced', 'random_state': 43, 'n_jobs': -1}
+2026-07-15 06:11:16 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:11:25 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:11:26 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1300, 'max_depth': 11, 'max_features': 'sqrt', 'min_samples_leaf': 14, 'class_weight': 'balanced', 'random_state': 43, 'n_jobs': -1}
+2026-07-15 06:11:26 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:11:37 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:11:38 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1500, 'max_depth': 18, 'max_features': 'sqrt', 'min_samples_leaf': 8, 'class_weight': 'balanced', 'random_state': 43, 'n_jobs': -1}
+2026-07-15 06:11:38 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:11:52 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:11:53 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1100, 'max_depth': 9, 'max_features': 'sqrt', 'min_samples_leaf': 13, 'class_weight': 'balanced', 'random_state': 43, 'n_jobs': -1}
+2026-07-15 06:11:53 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:12:01 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:12:02 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 900, 'max_depth': 6, 'max_features': 'sqrt', 'min_samples_leaf': 4, 'class_weight': 'balanced', 'random_state': 43, 'n_jobs': -1}
+2026-07-15 06:12:02 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:12:08 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:12:08 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1300, 'max_depth': 12, 'max_features': 'sqrt', 'min_samples_leaf': 14, 'class_weight': 'balanced', 'random_state': 43, 'n_jobs': -1}
+2026-07-15 06:12:08 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:12:19 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:12:20 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1300, 'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 13, 'class_weight': 'balanced', 'random_state': 43, 'n_jobs': -1}
+2026-07-15 06:12:20 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:12:30 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:12:30 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1350, 'max_depth': 15, 'max_features': 'sqrt', 'min_samples_leaf': 12, 'class_weight': 'balanced', 'random_state': 43, 'n_jobs': -1}
+2026-07-15 06:12:30 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:12:43 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:12:43 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1150, 'max_depth': 9, 'max_features': 'sqrt', 'min_samples_leaf': 11, 'class_weight': 'balanced', 'random_state': 43, 'n_jobs': -1}
+2026-07-15 06:12:43 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:12:53 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:12:53 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1000, 'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 9, 'class_weight': 'balanced', 'random_state': 43, 'n_jobs': -1}
+2026-07-15 06:12:53 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:13:01 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:13:02 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1400, 'max_depth': 13, 'max_features': 0.20767870069866706, 'min_samples_leaf': 13, 'class_weight': 'balanced', 'random_state': 43, 'n_jobs': -1}
+2026-07-15 06:13:02 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:13:14 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:13:15 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1200, 'max_depth': 20, 'max_features': 'sqrt', 'min_samples_leaf': 14, 'class_weight': 'balanced', 'random_state': 43, 'n_jobs': -1}
+2026-07-15 06:13:15 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:13:26 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:13:26 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1000, 'max_depth': 8, 'max_features': 'sqrt', 'min_samples_leaf': 11, 'class_weight': 'balanced', 'random_state': 43, 'n_jobs': -1}
+2026-07-15 06:13:26 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:13:34 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:13:34 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 750, 'max_depth': None, 'max_features': 'log2', 'min_samples_leaf': 15, 'class_weight': 'balanced', 'random_state': 43, 'n_jobs': -1}
+2026-07-15 06:13:34 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:13:41 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:13:41 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 450, 'max_depth': 10, 'max_features': 'log2', 'min_samples_leaf': 11, 'class_weight': 'balanced', 'random_state': 43, 'n_jobs': -1}
+2026-07-15 06:13:41 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:13:45 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:13:46 - HeartDisease_RiskDiscovery - INFO - Feature importance saved to artifacts/Model/rf/fold_1/feature_importance.json
+2026-07-15 06:13:46 - HeartDisease_RiskDiscovery - INFO - RandomForest saved to artifacts/Model/rf/fold_1/model.joblib
+2026-07-15 06:13:47 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 250, 'max_depth': 11, 'max_features': 0.7861345284881205, 'min_samples_leaf': 8, 'class_weight': 'balanced', 'random_state': 44, 'n_jobs': -1}
+2026-07-15 06:13:47 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:13:53 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:13:53 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1400, 'max_depth': None, 'max_features': 'log2', 'min_samples_leaf': 14, 'class_weight': 'balanced', 'random_state': 44, 'n_jobs': -1}
+2026-07-15 06:13:53 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:14:06 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:14:06 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 300, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 14, 'class_weight': 'balanced', 'random_state': 44, 'n_jobs': -1}
+2026-07-15 06:14:06 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:14:09 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:14:09 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 400, 'max_depth': 27, 'max_features': 'log2', 'min_samples_leaf': 11, 'class_weight': 'balanced', 'random_state': 44, 'n_jobs': -1}
+2026-07-15 06:14:09 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:14:13 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:14:14 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1200, 'max_depth': 19, 'max_features': 0.6268591942024175, 'min_samples_leaf': 6, 'class_weight': 'balanced', 'random_state': 44, 'n_jobs': -1}
+2026-07-15 06:14:14 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:14:42 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:14:43 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1000, 'max_depth': 13, 'max_features': 0.9529598266230593, 'min_samples_leaf': 14, 'class_weight': 'balanced', 'random_state': 44, 'n_jobs': -1}
+2026-07-15 06:14:43 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:15:10 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:15:11 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1150, 'max_depth': None, 'max_features': 0.8616752409573035, 'min_samples_leaf': 11, 'class_weight': 'balanced', 'random_state': 44, 'n_jobs': -1}
+2026-07-15 06:15:11 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:15:45 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:15:45 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1300, 'max_depth': None, 'max_features': 0.6385157401579915, 'min_samples_leaf': 2, 'class_weight': 'balanced', 'random_state': 44, 'n_jobs': -1}
+2026-07-15 06:15:45 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:16:24 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:16:25 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 700, 'max_depth': None, 'max_features': 0.5425265318354703, 'min_samples_leaf': 2, 'class_weight': 'balanced', 'random_state': 44, 'n_jobs': -1}
+2026-07-15 06:16:25 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:16:42 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:16:43 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 750, 'max_depth': 17, 'max_features': 0.2826738203359742, 'min_samples_leaf': 1, 'class_weight': 'balanced', 'random_state': 44, 'n_jobs': -1}
+2026-07-15 06:16:43 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:16:53 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:16:53 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1500, 'max_depth': None, 'max_features': 'log2', 'min_samples_leaf': 6, 'class_weight': 'balanced', 'random_state': 44, 'n_jobs': -1}
+2026-07-15 06:16:53 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:17:11 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:17:12 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 550, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 15, 'class_weight': 'balanced', 'random_state': 44, 'n_jobs': -1}
+2026-07-15 06:17:12 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:17:17 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:17:17 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 600, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 15, 'class_weight': 'balanced', 'random_state': 44, 'n_jobs': -1}
+2026-07-15 06:17:17 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:17:23 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:17:24 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 850, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 12, 'class_weight': 'balanced', 'random_state': 44, 'n_jobs': -1}
+2026-07-15 06:17:24 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:17:32 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:17:32 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 500, 'max_depth': None, 'max_features': 'log2', 'min_samples_leaf': 13, 'class_weight': 'balanced', 'random_state': 44, 'n_jobs': -1}
+2026-07-15 06:17:32 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:17:37 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:17:37 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1500, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 9, 'class_weight': 'balanced', 'random_state': 44, 'n_jobs': -1}
+2026-07-15 06:17:37 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:17:52 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:17:52 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 950, 'max_depth': None, 'max_features': 'log2', 'min_samples_leaf': 15, 'class_weight': 'balanced', 'random_state': 44, 'n_jobs': -1}
+2026-07-15 06:17:52 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:18:02 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:18:02 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1050, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 12, 'class_weight': 'balanced', 'random_state': 44, 'n_jobs': -1}
+2026-07-15 06:18:02 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:18:12 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:18:13 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1350, 'max_depth': None, 'max_features': 'log2', 'min_samples_leaf': 10, 'class_weight': 'balanced', 'random_state': 44, 'n_jobs': -1}
+2026-07-15 06:18:13 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:18:26 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:18:26 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 200, 'max_depth': None, 'max_features': 'log2', 'min_samples_leaf': 13, 'class_weight': 'balanced', 'random_state': 44, 'n_jobs': -1}
+2026-07-15 06:18:26 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:18:28 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:18:28 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 200, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 8, 'class_weight': 'balanced', 'random_state': 44, 'n_jobs': -1}
+2026-07-15 06:18:28 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:18:30 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:18:31 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 500, 'max_depth': None, 'max_features': 'log2', 'min_samples_leaf': 13, 'class_weight': 'balanced', 'random_state': 44, 'n_jobs': -1}
+2026-07-15 06:18:31 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:18:36 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:18:36 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 350, 'max_depth': None, 'max_features': 'log2', 'min_samples_leaf': 15, 'class_weight': 'balanced', 'random_state': 44, 'n_jobs': -1}
+2026-07-15 06:18:36 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:18:39 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:18:40 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 450, 'max_depth': None, 'max_features': 'log2', 'min_samples_leaf': 13, 'class_weight': 'balanced', 'random_state': 44, 'n_jobs': -1}
+2026-07-15 06:18:40 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:18:45 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:18:45 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 750, 'max_depth': None, 'max_features': 'log2', 'min_samples_leaf': 14, 'class_weight': 'balanced', 'random_state': 44, 'n_jobs': -1}
+2026-07-15 06:18:45 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:18:53 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:18:54 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 600, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 12, 'class_weight': 'balanced', 'random_state': 44, 'n_jobs': -1}
+2026-07-15 06:18:54 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:19:01 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:19:01 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 200, 'max_depth': 6, 'max_features': 'log2', 'min_samples_leaf': 15, 'class_weight': 'balanced', 'random_state': 44, 'n_jobs': -1}
+2026-07-15 06:19:01 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:19:02 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:19:02 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 900, 'max_depth': None, 'max_features': 'log2', 'min_samples_leaf': 11, 'class_weight': 'balanced', 'random_state': 44, 'n_jobs': -1}
+2026-07-15 06:19:02 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:19:12 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:19:13 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 600, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 13, 'class_weight': 'balanced', 'random_state': 44, 'n_jobs': -1}
+2026-07-15 06:19:13 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:19:21 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:19:21 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 300, 'max_depth': 30, 'max_features': 'log2', 'min_samples_leaf': 9, 'class_weight': 'balanced', 'random_state': 44, 'n_jobs': -1}
+2026-07-15 06:19:21 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:19:26 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:19:26 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 200, 'max_depth': None, 'max_features': 'log2', 'min_samples_leaf': 13, 'class_weight': 'balanced', 'random_state': 44, 'n_jobs': -1}
+2026-07-15 06:19:26 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44794 samples
+2026-07-15 06:19:29 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:19:30 - HeartDisease_RiskDiscovery - INFO - Feature importance saved to artifacts/Model/rf/fold_2/feature_importance.json
+2026-07-15 06:19:30 - HeartDisease_RiskDiscovery - INFO - RandomForest saved to artifacts/Model/rf/fold_2/model.joblib
+2026-07-15 06:19:30 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1250, 'max_depth': 19, 'max_features': 'log2', 'min_samples_leaf': 2, 'class_weight': 'balanced', 'random_state': 45, 'n_jobs': -1}
+2026-07-15 06:19:30 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:19:51 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:19:52 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1250, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 9, 'class_weight': 'balanced', 'random_state': 45, 'n_jobs': -1}
+2026-07-15 06:19:52 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:20:05 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:20:06 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 200, 'max_depth': 8, 'max_features': 'sqrt', 'min_samples_leaf': 7, 'class_weight': 'balanced', 'random_state': 45, 'n_jobs': -1}
+2026-07-15 06:20:06 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:20:07 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:20:07 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1500, 'max_depth': 13, 'max_features': 0.6222713169294454, 'min_samples_leaf': 15, 'class_weight': 'balanced', 'random_state': 45, 'n_jobs': -1}
+2026-07-15 06:20:07 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:20:41 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:20:41 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 300, 'max_depth': 18, 'max_features': 'log2', 'min_samples_leaf': 4, 'class_weight': 'balanced', 'random_state': 45, 'n_jobs': -1}
+2026-07-15 06:20:41 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:20:44 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:20:45 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 900, 'max_depth': 8, 'max_features': 0.6948246980691463, 'min_samples_leaf': 6, 'class_weight': 'balanced', 'random_state': 45, 'n_jobs': -1}
+2026-07-15 06:20:45 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:21:01 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:21:02 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 850, 'max_depth': None, 'max_features': 0.2371253473183278, 'min_samples_leaf': 12, 'class_weight': 'balanced', 'random_state': 45, 'n_jobs': -1}
+2026-07-15 06:21:02 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:21:11 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:21:12 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1300, 'max_depth': 14, 'max_features': 0.3679855159208745, 'min_samples_leaf': 6, 'class_weight': 'balanced', 'random_state': 45, 'n_jobs': -1}
+2026-07-15 06:21:12 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:21:32 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:21:33 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1000, 'max_depth': None, 'max_features': 0.9592837081294818, 'min_samples_leaf': 3, 'class_weight': 'balanced', 'random_state': 45, 'n_jobs': -1}
+2026-07-15 06:21:33 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:22:21 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:22:22 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 300, 'max_depth': None, 'max_features': 'log2', 'min_samples_leaf': 5, 'class_weight': 'balanced', 'random_state': 45, 'n_jobs': -1}
+2026-07-15 06:22:22 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:22:26 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:22:26 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 650, 'max_depth': 30, 'max_features': 0.9987578703945807, 'min_samples_leaf': 10, 'class_weight': 'balanced', 'random_state': 45, 'n_jobs': -1}
+2026-07-15 06:22:26 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:22:50 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:22:51 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 550, 'max_depth': 6, 'max_features': 'sqrt', 'min_samples_leaf': 7, 'class_weight': 'balanced', 'random_state': 45, 'n_jobs': -1}
+2026-07-15 06:22:51 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:22:55 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:22:55 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 650, 'max_depth': 6, 'max_features': 'sqrt', 'min_samples_leaf': 8, 'class_weight': 'balanced', 'random_state': 45, 'n_jobs': -1}
+2026-07-15 06:22:55 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:23:00 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:23:01 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 200, 'max_depth': 11, 'max_features': 0.6648789571694507, 'min_samples_leaf': 11, 'class_weight': 'balanced', 'random_state': 45, 'n_jobs': -1}
+2026-07-15 06:23:01 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:23:05 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:23:05 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 900, 'max_depth': 9, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'class_weight': 'balanced', 'random_state': 45, 'n_jobs': -1}
+2026-07-15 06:23:05 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:23:13 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:23:14 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1000, 'max_depth': 11, 'max_features': 0.6821241761171737, 'min_samples_leaf': 1, 'class_weight': 'balanced', 'random_state': 45, 'n_jobs': -1}
+2026-07-15 06:23:14 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:23:36 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:23:36 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 900, 'max_depth': 17, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'class_weight': 'balanced', 'random_state': 45, 'n_jobs': -1}
+2026-07-15 06:23:36 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:23:46 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:23:46 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 800, 'max_depth': 9, 'max_features': 0.4556484727060551, 'min_samples_leaf': 4, 'class_weight': 'balanced', 'random_state': 45, 'n_jobs': -1}
+2026-07-15 06:23:46 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:23:57 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:23:57 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1050, 'max_depth': None, 'max_features': 0.8242673282972763, 'min_samples_leaf': 13, 'class_weight': 'balanced', 'random_state': 45, 'n_jobs': -1}
+2026-07-15 06:23:57 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:24:28 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:24:29 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 550, 'max_depth': 24, 'max_features': 'sqrt', 'min_samples_leaf': 3, 'class_weight': 'balanced', 'random_state': 45, 'n_jobs': -1}
+2026-07-15 06:24:29 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:24:35 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:24:35 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1150, 'max_depth': 15, 'max_features': 'log2', 'min_samples_leaf': 5, 'class_weight': 'balanced', 'random_state': 45, 'n_jobs': -1}
+2026-07-15 06:24:35 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:24:46 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:24:46 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 800, 'max_depth': 10, 'max_features': 0.45413947484336903, 'min_samples_leaf': 3, 'class_weight': 'balanced', 'random_state': 45, 'n_jobs': -1}
+2026-07-15 06:24:46 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:24:57 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:24:57 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 750, 'max_depth': 10, 'max_features': 0.4987175235880745, 'min_samples_leaf': 2, 'class_weight': 'balanced', 'random_state': 45, 'n_jobs': -1}
+2026-07-15 06:24:57 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:25:08 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:25:08 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 750, 'max_depth': 12, 'max_features': 0.49098765627198265, 'min_samples_leaf': 3, 'class_weight': 'balanced', 'random_state': 45, 'n_jobs': -1}
+2026-07-15 06:25:08 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:25:20 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:25:20 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 700, 'max_depth': 9, 'max_features': 0.5314984557927884, 'min_samples_leaf': 5, 'class_weight': 'balanced', 'random_state': 45, 'n_jobs': -1}
+2026-07-15 06:25:20 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:25:30 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:25:30 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 500, 'max_depth': 10, 'max_features': 0.5148609339625723, 'min_samples_leaf': 4, 'class_weight': 'balanced', 'random_state': 45, 'n_jobs': -1}
+2026-07-15 06:25:30 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:25:38 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:25:38 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 700, 'max_depth': None, 'max_features': 0.3474893145079699, 'min_samples_leaf': 2, 'class_weight': 'balanced', 'random_state': 45, 'n_jobs': -1}
+2026-07-15 06:25:38 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:25:50 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:25:51 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 450, 'max_depth': 15, 'max_features': 0.559365236210037, 'min_samples_leaf': 5, 'class_weight': 'balanced', 'random_state': 45, 'n_jobs': -1}
+2026-07-15 06:25:51 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:26:00 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:26:00 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 650, 'max_depth': 6, 'max_features': 0.39353942679198795, 'min_samples_leaf': 3, 'class_weight': 'balanced', 'random_state': 45, 'n_jobs': -1}
+2026-07-15 06:26:00 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:26:06 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:26:06 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 400, 'max_depth': 12, 'max_features': 0.5567519474457356, 'min_samples_leaf': 2, 'class_weight': 'balanced', 'random_state': 45, 'n_jobs': -1}
+2026-07-15 06:26:06 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:26:13 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:26:14 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 750, 'max_depth': 10, 'max_features': 0.4987175235880745, 'min_samples_leaf': 2, 'class_weight': 'balanced', 'random_state': 45, 'n_jobs': -1}
+2026-07-15 06:26:14 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:26:25 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:26:26 - HeartDisease_RiskDiscovery - INFO - Feature importance saved to artifacts/Model/rf/fold_3/feature_importance.json
+2026-07-15 06:26:26 - HeartDisease_RiskDiscovery - INFO - RandomForest saved to artifacts/Model/rf/fold_3/model.joblib
+2026-07-15 06:26:26 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 550, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 10, 'class_weight': 'balanced', 'random_state': 46, 'n_jobs': -1}
+2026-07-15 06:26:26 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:26:32 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:26:33 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1400, 'max_depth': 18, 'max_features': 0.20067195761143897, 'min_samples_leaf': 15, 'class_weight': 'balanced', 'random_state': 46, 'n_jobs': -1}
+2026-07-15 06:26:33 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:26:46 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:26:46 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 450, 'max_depth': 13, 'max_features': 'sqrt', 'min_samples_leaf': 7, 'class_weight': 'balanced', 'random_state': 46, 'n_jobs': -1}
+2026-07-15 06:26:46 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:26:51 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:26:51 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1250, 'max_depth': None, 'max_features': 'log2', 'min_samples_leaf': 10, 'class_weight': 'balanced', 'random_state': 46, 'n_jobs': -1}
+2026-07-15 06:26:51 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:27:03 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:27:04 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1250, 'max_depth': 16, 'max_features': 0.49926927271012717, 'min_samples_leaf': 13, 'class_weight': 'balanced', 'random_state': 46, 'n_jobs': -1}
+2026-07-15 06:27:04 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:27:26 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:27:26 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 450, 'max_depth': 20, 'max_features': 'log2', 'min_samples_leaf': 15, 'class_weight': 'balanced', 'random_state': 46, 'n_jobs': -1}
+2026-07-15 06:27:26 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:27:30 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:27:31 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1300, 'max_depth': 21, 'max_features': 'sqrt', 'min_samples_leaf': 7, 'class_weight': 'balanced', 'random_state': 46, 'n_jobs': -1}
+2026-07-15 06:27:31 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:27:44 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:27:44 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 400, 'max_depth': None, 'max_features': 'log2', 'min_samples_leaf': 5, 'class_weight': 'balanced', 'random_state': 46, 'n_jobs': -1}
+2026-07-15 06:27:44 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:27:49 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:27:49 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 450, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 3, 'class_weight': 'balanced', 'random_state': 46, 'n_jobs': -1}
+2026-07-15 06:27:49 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:27:54 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:27:54 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1100, 'max_depth': None, 'max_features': 0.9491755395742849, 'min_samples_leaf': 2, 'class_weight': 'balanced', 'random_state': 46, 'n_jobs': -1}
+2026-07-15 06:27:54 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:28:43 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:28:44 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 850, 'max_depth': 6, 'max_features': 0.9853037025043714, 'min_samples_leaf': 8, 'class_weight': 'balanced', 'random_state': 46, 'n_jobs': -1}
+2026-07-15 06:28:44 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:28:59 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:28:59 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 200, 'max_depth': 12, 'max_features': 0.24022860362361745, 'min_samples_leaf': 13, 'class_weight': 'balanced', 'random_state': 46, 'n_jobs': -1}
+2026-07-15 06:28:59 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:29:01 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:29:01 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 250, 'max_depth': 10, 'max_features': 0.6185560356518618, 'min_samples_leaf': 12, 'class_weight': 'balanced', 'random_state': 46, 'n_jobs': -1}
+2026-07-15 06:29:01 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:29:06 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:29:06 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 200, 'max_depth': 29, 'max_features': 0.6794201040052776, 'min_samples_leaf': 10, 'class_weight': 'balanced', 'random_state': 46, 'n_jobs': -1}
+2026-07-15 06:29:06 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:29:11 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:29:11 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 750, 'max_depth': 9, 'max_features': 'sqrt', 'min_samples_leaf': 5, 'class_weight': 'balanced', 'random_state': 46, 'n_jobs': -1}
+2026-07-15 06:29:11 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:29:17 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:29:17 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 750, 'max_depth': 7, 'max_features': 0.6532763831741455, 'min_samples_leaf': 1, 'class_weight': 'balanced', 'random_state': 46, 'n_jobs': -1}
+2026-07-15 06:29:17 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:29:28 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:29:29 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 900, 'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 4, 'class_weight': 'balanced', 'random_state': 46, 'n_jobs': -1}
+2026-07-15 06:29:29 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:29:36 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:29:37 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1050, 'max_depth': 11, 'max_features': 0.4455747986098037, 'min_samples_leaf': 4, 'class_weight': 'balanced', 'random_state': 46, 'n_jobs': -1}
+2026-07-15 06:29:37 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:29:52 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:29:52 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1050, 'max_depth': 14, 'max_features': 0.44166171291670464, 'min_samples_leaf': 12, 'class_weight': 'balanced', 'random_state': 46, 'n_jobs': -1}
+2026-07-15 06:29:52 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:30:09 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:30:09 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 650, 'max_depth': 26, 'max_features': 0.4985312434039807, 'min_samples_leaf': 8, 'class_weight': 'balanced', 'random_state': 46, 'n_jobs': -1}
+2026-07-15 06:30:09 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:30:22 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:30:22 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1500, 'max_depth': 10, 'max_features': 0.6883716447911362, 'min_samples_leaf': 12, 'class_weight': 'balanced', 'random_state': 46, 'n_jobs': -1}
+2026-07-15 06:30:22 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:30:51 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:30:52 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1500, 'max_depth': 10, 'max_features': 0.7125198387676818, 'min_samples_leaf': 12, 'class_weight': 'balanced', 'random_state': 46, 'n_jobs': -1}
+2026-07-15 06:30:52 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:31:21 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:31:21 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1500, 'max_depth': 11, 'max_features': 0.7927108837214656, 'min_samples_leaf': 11, 'class_weight': 'balanced', 'random_state': 46, 'n_jobs': -1}
+2026-07-15 06:31:21 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:31:55 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:31:56 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1500, 'max_depth': 8, 'max_features': 0.8064509512449927, 'min_samples_leaf': 14, 'class_weight': 'balanced', 'random_state': 46, 'n_jobs': -1}
+2026-07-15 06:31:56 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:32:24 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:32:24 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1100, 'max_depth': 16, 'max_features': 0.783909869277172, 'min_samples_leaf': 9, 'class_weight': 'balanced', 'random_state': 46, 'n_jobs': -1}
+2026-07-15 06:32:24 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:32:55 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:32:56 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1350, 'max_depth': 14, 'max_features': 0.3709998102559039, 'min_samples_leaf': 6, 'class_weight': 'balanced', 'random_state': 46, 'n_jobs': -1}
+2026-07-15 06:32:56 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:33:17 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:33:17 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1200, 'max_depth': None, 'max_features': 0.5889032612696274, 'min_samples_leaf': 12, 'class_weight': 'balanced', 'random_state': 46, 'n_jobs': -1}
+2026-07-15 06:33:17 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:33:44 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:33:44 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1400, 'max_depth': 6, 'max_features': 0.8716930258355736, 'min_samples_leaf': 1, 'class_weight': 'balanced', 'random_state': 46, 'n_jobs': -1}
+2026-07-15 06:33:44 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:34:09 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:34:10 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1000, 'max_depth': 12, 'max_features': 0.7108193270767595, 'min_samples_leaf': 14, 'class_weight': 'balanced', 'random_state': 46, 'n_jobs': -1}
+2026-07-15 06:34:10 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:34:31 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:34:32 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1500, 'max_depth': None, 'max_features': 0.3725671567921823, 'min_samples_leaf': 11, 'class_weight': 'balanced', 'random_state': 46, 'n_jobs': -1}
+2026-07-15 06:34:32 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:34:56 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:34:57 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1500, 'max_depth': 10, 'max_features': 0.6883716447911362, 'min_samples_leaf': 12, 'class_weight': 'balanced', 'random_state': 46, 'n_jobs': -1}
+2026-07-15 06:34:57 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 44795 samples
+2026-07-15 06:35:26 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:35:27 - HeartDisease_RiskDiscovery - INFO - Feature importance saved to artifacts/Model/rf/fold_4/feature_importance.json
+2026-07-15 06:35:27 - HeartDisease_RiskDiscovery - INFO - RandomForest saved to artifacts/Model/rf/fold_4/model.joblib
+2026-07-15 06:35:29 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 200, 'max_depth': None, 'max_features': 'log2', 'min_samples_leaf': 13, 'class_weight': 'balanced', 'random_state': 42, 'n_jobs': -1}
+2026-07-15 06:35:29 - HeartDisease_RiskDiscovery - INFO - Training RandomForest on 55993 samples
+2026-07-15 06:35:31 - HeartDisease_RiskDiscovery - INFO - RandomForest training completed
+2026-07-15 06:35:32 - HeartDisease_RiskDiscovery - INFO - Feature importance saved to artifacts/Model/rf/final_model/feature_importance.json
+2026-07-15 06:35:32 - HeartDisease_RiskDiscovery - INFO - RandomForest saved to artifacts/Model/rf/final_model/model.joblib

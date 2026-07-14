@@ -1,0 +1,108 @@
+random_seed: 42
+
+paths:
+  fe_dir: artifacts/fe
+  fe_dir_tabnet: artifacts/fe/tabnet  # Optional: TabNet-specific FE directory
+  model_dir: artifacts/Model
+  data: data/cardio_data.csv
+  artifacts: artifacts
+  reports: reports
+  eda_dir: artifacts/eda
+  preprocessing_dir: artifacts/preprocessing
+  # Model-specific feature engineering paths
+  fe_rf_dir: artifacts/fe/random_forest
+  fe_tabnet_dir: artifacts/fe/tabnet
+
+evaluation:
+  cv_folds: 5
+  metrics: [roc_auc, pr_auc, f1, brier, ece, accuracy]
+
+modeling:
+  model_type: rf  # rf | tabnet | vae_tabnet
+  hpo:
+    enabled: true
+    n_trials: 30
+    timeout_min: 45
+    pruner: median
+    composite_weights: [0.4, 0.4, 0.2]  # [roc_auc, pr_auc, accuracy] - weights for composite score optimization
+  calibration:
+    enabled: true
+    method: platt  # platt | isotonic
+  early_stopping:
+    patience: 15
+    monitor: val_pr_auc
+    min_delta: 0.0005
+  test_scoring: true
+  final_model: true
+  final_model_param_strategy: best_fold_val_pr_auc  # or median_mode_aggregate_fold_params
+  final_model_selection_metric: pr_auc  # fold val metric for best-fold selection (Train only)
+
+rf:
+  class_weight: balanced
+
+tabnet:
+  n_d: 16
+  n_a: 16
+  n_steps: 5
+  gamma: 1.5
+  lambda_sparse: 1e-4
+  batch_size: 256
+  epochs: 80
+  lr: 1e-3
+  dropout: 0.0
+
+vae:
+  latent_dim: 16
+  width: 256
+  depth: 3
+  beta: 1.0
+  dropout: 0.1
+  lr: 1e-3
+  batch_size: 128
+  epochs: 50
+  joint_training: false  # true → optimize L_joint
+  lambda_cls: 1.0
+
+# Legacy compatibility
+model:
+  type: ensemble_joint
+  params:
+    vae_latent_dim: 16
+    tabnet_steps: 5
+    lambda_sparse: 1e-4
+
+training:
+  batch_size: 128
+  epochs: 10
+  optimizer: adam
+  learning_rate: 1e-3
+  seed: 42
+
+feature_engineering:
+  remove_correlated: true
+  correlation_threshold: 0.95
+  use_mice: false
+  use_interaction_features: true
+  use_stability_selection: false
+  stability_threshold: 0.6
+  top_k_features: 15
+  auto_select_k: false
+  k_range: [5, 8, 10, 12, 15, 17, 20]
+  cv_folds: 5
+  scoring: roc_auc
+  tabnet:
+    skip_audit: false
+    keep_all_features: true
+
+preprocessing:
+  target: cardio
+  target_col: cardio  # Alias for target, used in modeling stage
+  test_size: 0.2
+  seed: 42
+  strict_filter: false
+  clean_bp: true
+  handle_outliers: true
+  use_mice: false
+  remove_correlated: true
+  validate_split: true
+  use_eda_outputs: true

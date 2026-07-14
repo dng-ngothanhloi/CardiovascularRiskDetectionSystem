@@ -1,0 +1,45 @@
+random_seed: 42
+
+paths:
+  attention_dir: artifacts/Interpretation/attention/tabnet
+  discovery_dir: artifacts/Discovery
+  fe_dir: artifacts/fe
+  tabnet_model_dir: artifacts/Model/tabnet
+
+attention_to_item:
+  agg: mean
+  norm: per_feature_max
+  tau: 0.5
+  min_active_features: 1
+
+apriori:
+  min_support: 0.02
+  metric: confidence
+  min_threshold: 0.6
+  max_len: 4
+  use_colnames: true
+
+postprocess:
+  min_lift: 1.2
+  min_confidence: 0.6
+  min_support: 0.02
+  topk: 200
+  redundancy: true
+  stability_bootstrap:
+    enabled: true
+    n_boot: 200
+    sample_frac: 0.8
+    min_presence: 0.6
+
+cohort:
+  enabled: true
+  file: artifacts/fe/tabnet/cohort_labels.csv
+  min_cohort_size: 200
+  mine_per_cohort: true
+
+ranking:
+  weights:
+    lift: 0.5
+    confidence: 0.3
+    support: 0.2
+

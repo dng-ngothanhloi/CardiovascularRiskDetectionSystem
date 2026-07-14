@@ -1,0 +1,50 @@
+{
+  "auc_score": 0.6885892461734693,
+  "shift_detected": true,
+  "severity": "Medium",
+  "interpretation": "Distribution shift detected! AUC = 0.6886. Train and test sets are significantly different. Severity: Medium",
+  "train_size": 56000,
+  "test_size": 14000,
+  "top_shift_features": [
+    {
+      "feature": "age",
+      "importance": 0.2700381451932412
+    },
+    {
+      "feature": "weight",
+      "importance": 0.1885292450821279
+    },
+    {
+      "feature": "height",
+      "importance": 0.16827844584865748
+    },
+    {
+      "feature": "ap_hi",
+      "importance": 0.12092815976008622
+    },
+    {
+      "feature": "ap_lo",
+      "importance": 0.10488211879874373
+    },
+    {
+      "feature": "cholesterol",
+      "importance": 0.03577345244832225
+    },
+    {
+      "feature": "gluc",
+      "importance": 0.03092430946056713
+    },
+    {
+      "feature": "gender",
+      "importance": 0.02215185539694024
+    },
+    {
+      "feature": "active",
+      "importance": 0.021190419139187767
+    },
+    {
+      "feature": "smoke",
+      "importance": 0.0196864998307797
+    }
+  ]
+}

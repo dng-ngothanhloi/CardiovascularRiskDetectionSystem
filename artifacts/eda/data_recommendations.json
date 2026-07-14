@@ -1,0 +1,94 @@
+{
+  "code_fixed_errors": [
+    {
+      "issue": "ZeroDivisionError in plot_distributions when num_cols is empty",
+      "status": "\u2705 Fixed",
+      "solution": "Added check for empty num_cols before plotting and ensured n_cols >= 1",
+      "location": "src/data_understanding.py: plot_distributions()",
+      "impact": "Prevents crashes when no numeric columns are found"
+    },
+    {
+      "issue": "Improved numeric column detection",
+      "status": "\u2705 Fixed",
+      "solution": "Changed from dtype checking to pd.api.types.is_numeric_dtype() for better accuracy",
+      "location": "src/data_understanding.py: main()",
+      "impact": "Better detection of numeric columns including derived variables"
+    },
+    {
+      "issue": "Missing error handling for empty num_cols in multiple functions",
+      "status": "\u2705 Fixed",
+      "solution": "Added checks in outlier detection, correlation analysis, MI calculation, and adversarial validation",
+      "location": "src/data_understanding.py: multiple functions",
+      "impact": "Prevents errors when processing datasets with no numeric columns"
+    }
+  ],
+  "manual_data_fixes": [
+    {
+      "issue": "ap_lo > ap_hi: 1234 records",
+      "severity": "High",
+      "description": "Diastolic pressure cannot be greater than systolic pressure (physiologically impossible)",
+      "action_required": "Manual review and correction required",
+      "suggested_fix": "Review flagged records in artifacts/eda/flagged_records.csv and correct or remove invalid records",
+      "impact": "1234 records (1.76%) have invalid blood pressure values"
+    },
+    {
+      "issue": "ap_hi > 240 mmHg: 40 records",
+      "severity": "Medium",
+      "description": "Extremely high systolic blood pressure (may indicate measurement error or critical condition)",
+      "action_required": "Review and verify with medical team",
+      "suggested_fix": "Flag for medical review or remove if confirmed measurement error",
+      "impact": "40 records (0.06%) have extreme values"
+    },
+    {
+      "issue": "ap_lo < 40 mmHg: 59 records",
+      "severity": "Medium",
+      "description": "Extremely low diastolic blood pressure (may indicate measurement error or critical condition)",
+      "action_required": "Review and verify with medical team",
+      "suggested_fix": "Flag for medical review or remove if confirmed measurement error",
+      "impact": "59 records (0.08%) have extreme values"
+    }
+  ],
+  "outlier_handling": [
+    {
+      "feature": "Height",
+      "method": "Truncation",
+      "description": "Height values outside reasonable range [100, 220] cm: 30 records",
+      "recommendation": "Cap height values at [100, 220] cm or remove extreme outliers",
+      "rationale": "Height outside this range is physiologically unlikely for adults"
+    },
+    {
+      "feature": "Weight",
+      "method": "Winsorization",
+      "description": "Weight values outside reasonable range [30, 200] kg: 7 records",
+      "recommendation": "Winsorize at 1st and 99th percentiles or cap at [30, 200] kg",
+      "rationale": "Extreme weights may indicate measurement errors"
+    },
+    {
+      "feature": "General Outlier Strategy",
+      "method": "Multiple Approaches",
+      "description": "Use IQR method for detection, then apply appropriate treatment",
+      "recommendation": "1. Z-score method: Flag outliers with |z| > 4\n2. IQR method: Flag values outside [Q1-1.5*IQR, Q3+1.5*IQR]\n3. Treatment: Winsorization for extreme values, removal for impossible values",
+      "rationale": "Different features require different outlier handling strategies based on domain knowledge"
+    }
+  ],
+  "other_recommendations": [
+    {
+      "category": "Feature Engineering",
+      "issue": "Derived variables created",
+      "recommendation": "\u26a0\ufe0f  Derived variables should be created in feature_engineering.py. Consider: BMI \u00d7 age interaction, pulse_pressure \u00d7 cholesterol interaction",
+      "priority": "Medium"
+    },
+    {
+      "category": "Feature Selection",
+      "issue": "High correlation between features",
+      "recommendation": "Review correlation matrix. Consider removing highly correlated features (corr > 0.9) to reduce multicollinearity",
+      "priority": "Medium"
+    },
+    {
+      "category": "Data Validation",
+      "issue": "Adversarial validation for train/test shift",
+      "recommendation": "Monitor adversarial validation AUC. If AUC > 0.6, consider stratified sampling or time-based splitting",
+      "priority": "Medium"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+random_seed: 42
+
+paths:
+  fe_dir: artifacts/fe
+  fe_dir_tabnet: artifacts/fe/tabnet
+  model_dir: artifacts/Model
+  data: data/cardio_data.csv
+  artifacts: artifacts
+  reports: reports
+  eda_dir: artifacts/eda
+  preprocessing_dir: artifacts/preprocessing
+  fe_rf_dir: artifacts/fe/random_forest
+  fe_tabnet_dir: artifacts/fe/tabnet
+
+evaluation:
+  cv_folds: 1  # Test với 1 fold để nhanh
+  metrics: [roc_auc, pr_auc, f1, brier, ece, accuracy]
+
+modeling:
+  model_type: vae_tabnet
+  hpo:
+    enabled: false  # Tắt HPO để test nhanh
+    n_trials: 1
+    timeout_min: 5
+    pruner: median
+  calibration:
+    enabled: true
+    method: platt
+  early_stopping:
+    patience: 3  # Giảm patience
+    monitor: val_pr_auc
+    min_delta: 0.0005
+  test_scoring: false  # Tắt test scoring để nhanh
+
+rf:
+  class_weight: balanced
+
+tabnet:
+  n_d: 8  # Giảm để test nhanh
+  n_a: 8
+  n_steps: 3
+  gamma: 1.5
+  lambda_sparse: 1e-4
+  batch_size: 128
+  epochs: 3  # Chỉ 3 epochs để test
+  lr: 1e-3
+  dropout: 0.0
+
+vae:
+  latent_dim: 8  # Giảm để test nhanh
+  width: 64
+  depth: 2
+  beta: 1.0
+  dropout: 0.1
+  lr: 1e-3
+  batch_size: 64
+  epochs: 3  # Chỉ 3 epochs để test
+  joint_training: false
+  lambda_cls: 1.0
+

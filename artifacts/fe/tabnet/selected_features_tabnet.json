@@ -1,0 +1,29 @@
+{
+  "notes": {
+    "skip_audit": false,
+    "threshold_corr_abs": 0.92,
+    "binary_dup_corr_abs": 0.95,
+    "mi_seed": 42
+  },
+  "kept_features": [
+    "gender",
+    "height",
+    "weight",
+    "ap_hi",
+    "ap_lo",
+    "cholesterol",
+    "gluc",
+    "smoke",
+    "alco",
+    "active",
+    "age_years",
+    "age_group",
+    "bmi",
+    "bmi_group",
+    "pulse_pressure",
+    "bp_stage",
+    "cholesterol_category",
+    "glucose_category",
+    "lifestyle_risk"
+  ]
+}

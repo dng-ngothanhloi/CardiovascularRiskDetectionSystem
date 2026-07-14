@@ -1,0 +1,22 @@
+{
+  "rows": 55993,
+  "columns": [
+    "id",
+    "sample_id",
+    "fold",
+    "model",
+    "y_true",
+    "y_pred",
+    "oof",
+    "y"
+  ],
+  "target_positive_ratio": 0.4997053203078956,
+  "folds_present": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "unique_sample_ids": 55993
+}

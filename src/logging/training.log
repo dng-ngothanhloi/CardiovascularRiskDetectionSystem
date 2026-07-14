@@ -1,0 +1,201 @@
+2026-07-14 22:23:26 - HeartDisease_RiskDiscovery - INFO - Loading data from: data/cardio_data.csv
+2026-07-14 22:23:26 - HeartDisease_RiskDiscovery - INFO - Detected semicolon (;) delimiter in CSV file
+2026-07-14 22:23:26 - HeartDisease_RiskDiscovery - INFO - Data shape: (70000, 13)
+2026-07-14 22:23:26 - HeartDisease_RiskDiscovery - INFO - Columns in raw data: ['id', 'age', 'gender', 'height', 'weight', 'ap_hi', 'ap_lo', 'cholesterol', 'gluc', 'smoke', 'alco', 'active', 'cardio']
+2026-07-14 22:23:26 - HeartDisease_RiskDiscovery - INFO - Target column 'cardio' confirmed in dataset.
+2026-07-14 22:23:26 - HeartDisease_RiskDiscovery - INFO - No derived variables found. They should be created in feature_engineering.py first.
+2026-07-14 22:23:26 - HeartDisease_RiskDiscovery - INFO - Schema exported to artifacts/eda/schema.json
+2026-07-14 22:23:26 - HeartDisease_RiskDiscovery - INFO - Flagging data quality issues...
+2026-07-14 22:23:26 - HeartDisease_RiskDiscovery - INFO - Saved 1326 flagged records to artifacts/eda/flagged_records.csv
+2026-07-14 22:23:26 - HeartDisease_RiskDiscovery - INFO - Data quality issues:
+{'ap_lo > ap_hi': np.int64(1234), 'ap_hi > 240': np.int64(40), 'ap_lo < 40': np.int64(59), 'ap_hi negative': np.int64(7), 'ap_lo negative': np.int64(1), 'duplicates': np.int64(0)}
+2026-07-14 22:23:26 - HeartDisease_RiskDiscovery - INFO - Target column 'cardio' confirmed after processing. DataFrame shape: (70000, 20)
+2026-07-14 22:23:26 - HeartDisease_RiskDiscovery - INFO - Found 11 numeric columns (excluding target, id, flags): ['age', 'gender', 'height', 'weight', 'ap_hi', 'ap_lo', 'cholesterol', 'gluc', 'smoke', 'alco', 'active']
+2026-07-14 22:23:26 - HeartDisease_RiskDiscovery - INFO - Generating statistical summary...
+2026-07-14 22:23:26 - HeartDisease_RiskDiscovery - INFO - Statistical summary saved to artifacts/eda/summary.csv
+2026-07-14 22:23:26 - HeartDisease_RiskDiscovery - INFO - Generating distribution plots...
+2026-07-14 22:23:27 - HeartDisease_RiskDiscovery - INFO - Saved distribution histograms to artifacts/eda/distributions_histogram.png
+2026-07-14 22:23:28 - HeartDisease_RiskDiscovery - INFO - Saved box plots to artifacts/eda/distributions_boxplot.png
+2026-07-14 22:23:28 - HeartDisease_RiskDiscovery - INFO - Detecting outliers using Z-score method...
+2026-07-14 22:23:29 - HeartDisease_RiskDiscovery - INFO - Z-score outliers detected. Counts:
+age               0
+gender            0
+height          122
+weight          191
+ap_hi            37
+ap_lo           929
+cholesterol       0
+gluc              0
+smoke             0
+alco           3764
+active            0
+dtype: int64
+2026-07-14 22:23:29 - HeartDisease_RiskDiscovery - INFO - Detecting outliers using IQR method...
+2026-07-14 22:23:29 - HeartDisease_RiskDiscovery - INFO - IQR outliers detected. Counts:
+age               4
+gender            0
+height          519
+weight         1819
+ap_hi          1435
+ap_lo          4632
+cholesterol       0
+gluc              0
+smoke             0
+alco              0
+active            0
+dtype: int64
+2026-07-14 22:23:29 - HeartDisease_RiskDiscovery - INFO - Computing Pearson correlation matrix...
+2026-07-14 22:23:29 - HeartDisease_RiskDiscovery - INFO - Pearson correlation matrix saved to artifacts/eda/correlation_pearson.csv
+2026-07-14 22:23:29 - HeartDisease_RiskDiscovery - INFO - Computing mutual information matrix...
+2026-07-14 22:23:31 - HeartDisease_RiskDiscovery - INFO - Mutual information saved to artifacts/eda/mutual_information.csv
+2026-07-14 22:23:31 - HeartDisease_RiskDiscovery - INFO - Performing causal discovery...
+2026-07-14 22:23:31 - HeartDisease_RiskDiscovery - INFO - Running PC Algorithm for causal discovery...
+2026-07-14 22:23:31 - HeartDisease_RiskDiscovery - WARNING - Causal discovery libraries not available. Using correlation-based graph.
+2026-07-14 22:23:31 - HeartDisease_RiskDiscovery - INFO - Causal DAG visualization saved: artifacts/eda/causal_dag_correlation.png
+2026-07-14 22:23:31 - HeartDisease_RiskDiscovery - INFO - Correlation-based causal graph created
+2026-07-14 22:23:31 - HeartDisease_RiskDiscovery - INFO - PC Algorithm result: Correlation_based
+2026-07-14 22:23:31 - HeartDisease_RiskDiscovery - INFO - Running NOTEARS algorithm for causal discovery...
+2026-07-14 22:23:31 - HeartDisease_RiskDiscovery - WARNING - NOTEARS library not available. Install with: pip install notears
+2026-07-14 22:23:31 - HeartDisease_RiskDiscovery - INFO - Causal discovery completed
+2026-07-14 22:23:31 - HeartDisease_RiskDiscovery - INFO - Performing bias and drift detection...
+2026-07-14 22:23:31 - HeartDisease_RiskDiscovery - INFO - Performing adversarial validation for bias and drift detection...
+2026-07-14 22:23:32 - HeartDisease_RiskDiscovery - INFO - Adversarial Validation Results:
+2026-07-14 22:23:32 - HeartDisease_RiskDiscovery - INFO -   AUC Score: 0.6886
+2026-07-14 22:23:32 - HeartDisease_RiskDiscovery - INFO -   Shift Detected: True
+2026-07-14 22:23:32 - HeartDisease_RiskDiscovery - INFO -   Severity: Medium
+2026-07-14 22:23:32 - HeartDisease_RiskDiscovery - INFO -   Interpretation: Distribution shift detected! AUC = 0.6886. Train and test sets are significantly different. Severity: Medium
+2026-07-14 22:23:32 - HeartDisease_RiskDiscovery - INFO - Adversarial validation results saved to artifacts/eda/adversarial_validation_results.json
+2026-07-14 22:23:32 - HeartDisease_RiskDiscovery - INFO - Adversarial validation AUC: 0.6886
+2026-07-14 22:23:32 - HeartDisease_RiskDiscovery - INFO - Distribution shift detected: True
+2026-07-14 22:23:32 - HeartDisease_RiskDiscovery - INFO - Plotting age & cardio relationship...
+2026-07-14 22:23:32 - HeartDisease_RiskDiscovery - WARNING - Missing age_years or cardio columns. Skipping age-cardio relationship plot.
+2026-07-14 22:23:32 - HeartDisease_RiskDiscovery - INFO - Plotting BMI vs cardio status...
+2026-07-14 22:23:32 - HeartDisease_RiskDiscovery - WARNING - Missing bmi, age_years, or cardio columns. Skipping BMI-cardio scatter plot.
+2026-07-14 22:23:32 - HeartDisease_RiskDiscovery - INFO - Plotting cholesterol & glucose levels...
+2026-07-14 22:23:33 - HeartDisease_RiskDiscovery - INFO - Saved cholesterol & glucose levels plot to artifacts/eda/cholesterol_glucose_levels.png
+2026-07-14 22:23:33 - HeartDisease_RiskDiscovery - INFO - Plotting lifestyle habits...
+2026-07-14 22:23:33 - HeartDisease_RiskDiscovery - INFO - Saved lifestyle habits plot to artifacts/eda/lifestyle_habits.png
+2026-07-14 22:23:33 - HeartDisease_RiskDiscovery - INFO - Generating key insights and recommendations...
+2026-07-14 22:23:33 - HeartDisease_RiskDiscovery - INFO - Key insights saved to artifacts/eda/key_insights.txt and .md
+2026-07-14 22:23:33 - HeartDisease_RiskDiscovery - INFO - 
+## 1. Dataset Overview
+- Total records: 70,000
+- Features: 19 (excluding target)
+- Target variable: cardio (binary)
+
+## 2. Class Distribution
+- No Disease: 50.0%
+- Disease: 50.0%
+
+## 5. Lifestyle Factors
+- Smoking increases risk: 47.5% vs 50.2%
+- Alcohol increases risk: 48.4% vs 50.1%
+- Physical activity reduces risk: 53.6% vs 49.1%
+
+## 6. Recommendations for Preprocessing & Feature Engineering
+- ⚠️  Derived variables (age_years, BMI, pulse_pressure) should be created in feature_engineering.py
+- ✅ Flag data quality issues: ap_lo > ap_hi, extreme BP values
+- ✅ Consider feature interactions: smoke × active, BMI × age
+- ✅ Use stratified cross-validation due to potential class imbalance
+- ✅ Focus on top MI features: age, BMI, pulse_pressure, cholesterol, glucose
+2026-07-14 22:23:33 - HeartDisease_RiskDiscovery - INFO - Generating comprehensive data quality recommendations...
+2026-07-14 22:23:33 - HeartDisease_RiskDiscovery - INFO - Data recommendations saved to artifacts/eda/data_recommendations.json and .md
+2026-07-14 22:23:33 - HeartDisease_RiskDiscovery - INFO - 
+============================================================
+2026-07-14 22:23:33 - HeartDisease_RiskDiscovery - INFO - DATA QUALITY RECOMMENDATIONS SUMMARY
+2026-07-14 22:23:33 - HeartDisease_RiskDiscovery - INFO - ============================================================
+2026-07-14 22:23:33 - HeartDisease_RiskDiscovery - INFO - ✅ Code-fixed errors: 3
+2026-07-14 22:23:33 - HeartDisease_RiskDiscovery - INFO - ⚠️  Manual data fixes required: 3
+2026-07-14 22:23:33 - HeartDisease_RiskDiscovery - INFO - 📊 Outlier handling recommendations: 3
+2026-07-14 22:23:33 - HeartDisease_RiskDiscovery - INFO - 💡 Other recommendations: 3
+2026-07-14 22:23:33 - HeartDisease_RiskDiscovery - INFO - ============================================================
+
+2026-07-14 22:23:33 - HeartDisease_RiskDiscovery - INFO - All EDA artifacts saved to artifacts/eda
+2026-07-14 22:23:33 - HeartDisease_RiskDiscovery - INFO - ============================================================
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - Loading data from: data/cardio_data.csv
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - Detected semicolon (;) delimiter
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - Data loaded: (70000, 13)
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - No duplicated rows detected.
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - Loaded flagged_records.csv: 1326 records
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - Loaded outliers_iqr.csv: (70000, 11)
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - Loaded outliers_zscore.csv: (70000, 11)
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - Loaded correlation_pearson.csv: (12, 12)
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - Loaded mutual_information.csv: 11 features
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - Loaded adversarial_feature_importance.csv: 11 features
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - Loaded data_recommendations.json
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - ============================================================
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - DATA CLEANING PIPELINE
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - ============================================================
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - Step 2: Cleaning blood pressure...
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - Removed 8 rows with negative BP values.
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - Fixing 1234 rows (swap by EDA flags).
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - Fixing 2419 rows (swap by direct mask ap_lo > ap_hi).
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - Capping 993 rows with ap_hi > 240.
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - Capping 203 rows with ap_hi < 90.
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - Capping 705 rows with ap_lo > 140.
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - Capping 349 rows with ap_lo < 60.
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - Repairing 2 rows with ap_hi == ap_lo using median_pp=40.0.
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - BP cleaning completed. Rows: 69992 (from 70000). Median_PP=40.0 | removed_neg=8 | swaps_flag=1234 | swaps_mask=2419
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - Records after BP cleaning: 69992 (99.99%)
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - Step 3: Handling outliers (winsorize/truncate)...
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - Handling outliers using winsorize method...
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - Using outlier masks from EDA
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - Capping 29 records with height < 100 cm
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - Capping 1 records with height > 220 cm
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - Winsorizing 7 records with weight < 30 kg
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - Step 4: Imputing missing values...
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - Imputing missing values using knn method...
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - No missing values found. Skipping imputation.
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - Step 5: Final data quality check...
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - No missing values remaining
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - ============================================================
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - DATA CLEANING COMPLETED
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - Initial records: 70000
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - Final records: 69992
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - Columns: 13
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - ============================================================
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - Class balance within acceptable range (positive ratio = 0.500).
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - Cleaned data saved to artifacts/preprocessing/data_cleaned.csv
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - Metadata saved to artifacts/preprocessing/preprocessing_metadata.json
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - Data cleaning completed successfully!
+2026-07-14 22:25:25 - HeartDisease_RiskDiscovery - INFO - Next step: Feature Engineering (transformation, scaling, feature selection)
+2026-07-14 22:29:03 - HeartDisease_RiskDiscovery - INFO - Loading cleaned data from: artifacts/preprocessing/data_cleaned.csv
+2026-07-14 22:29:03 - HeartDisease_RiskDiscovery - INFO - Data loaded: (69992, 13)
+2026-07-14 22:29:03 - HeartDisease_RiskDiscovery - INFO - ============================================================
+2026-07-14 22:29:03 - HeartDisease_RiskDiscovery - INFO - FEATURE ENGINEERING V1 - Creating derived features
+2026-07-14 22:29:03 - HeartDisease_RiskDiscovery - INFO - ============================================================
+2026-07-14 22:29:03 - HeartDisease_RiskDiscovery - INFO - Step 1: Creating derived variables...
+2026-07-14 22:29:03 - HeartDisease_RiskDiscovery - INFO - Derived variables created. Columns: 24
+2026-07-14 22:29:03 - HeartDisease_RiskDiscovery - INFO - New derived features created (12): ['age_group', 'age_years', 'bmi', 'bmi_group', 'bp_stage', 'chol_high', 'cholesterol_category', 'gluc_high', 'glucose_category', 'lifestyle_risk', 'overweight_flag', 'pulse_pressure']
+2026-07-14 22:29:03 - HeartDisease_RiskDiscovery - INFO - Step 2: Adding interaction features...
+2026-07-14 22:29:03 - HeartDisease_RiskDiscovery - INFO - Interaction features added. Columns: 27
+2026-07-14 22:29:03 - HeartDisease_RiskDiscovery - INFO - New interaction features created (3): ['bmi_age_interaction', 'pp_chol_interaction', 'smoke_active']
+2026-07-14 22:29:03 - HeartDisease_RiskDiscovery - INFO - Derived features saved to artifacts/fe/derived_features.csv
+2026-07-14 22:29:03 - HeartDisease_RiskDiscovery - INFO - ============================================================
+2026-07-14 22:29:03 - HeartDisease_RiskDiscovery - INFO - Step 3: Post-processing for model-type: rf
+2026-07-14 22:29:03 - HeartDisease_RiskDiscovery - INFO - ============================================================
+2026-07-14 22:29:04 - HeartDisease_RiskDiscovery - INFO - [v1] RF post-process OK. Outputs in: artifacts/fe/random_forest
+2026-07-14 22:29:04 - HeartDisease_RiskDiscovery - INFO - ============================================================
+2026-07-14 22:29:04 - HeartDisease_RiskDiscovery - INFO - Feature engineering v1 completed successfully!
+2026-07-14 22:29:04 - HeartDisease_RiskDiscovery - INFO - Next step: Modeling
+2026-07-14 22:29:04 - HeartDisease_RiskDiscovery - INFO - ============================================================
+2026-07-14 22:29:34 - HeartDisease_RiskDiscovery - INFO - Loading cleaned data from: artifacts/preprocessing/data_cleaned.csv
+2026-07-14 22:29:35 - HeartDisease_RiskDiscovery - INFO - Data loaded: (69992, 13)
+2026-07-14 22:29:35 - HeartDisease_RiskDiscovery - INFO - ============================================================
+2026-07-14 22:29:35 - HeartDisease_RiskDiscovery - INFO - FEATURE ENGINEERING V1 - Creating derived features
+2026-07-14 22:29:35 - HeartDisease_RiskDiscovery - INFO - ============================================================
+2026-07-14 22:29:35 - HeartDisease_RiskDiscovery - INFO - Step 1: Creating derived variables...
+2026-07-14 22:29:35 - HeartDisease_RiskDiscovery - INFO - Derived variables created. Columns: 24
+2026-07-14 22:29:35 - HeartDisease_RiskDiscovery - INFO - New derived features created (12): ['age_group', 'age_years', 'bmi', 'bmi_group', 'bp_stage', 'chol_high', 'cholesterol_category', 'gluc_high', 'glucose_category', 'lifestyle_risk', 'overweight_flag', 'pulse_pressure']
+2026-07-14 22:29:35 - HeartDisease_RiskDiscovery - INFO - Step 2: Adding interaction features...
+2026-07-14 22:29:35 - HeartDisease_RiskDiscovery - INFO - Interaction features added. Columns: 27
+2026-07-14 22:29:35 - HeartDisease_RiskDiscovery - INFO - New interaction features created (3): ['bmi_age_interaction', 'pp_chol_interaction', 'smoke_active']
+2026-07-14 22:29:35 - HeartDisease_RiskDiscovery - INFO - Derived features saved to artifacts/fe/derived_features.csv
+2026-07-14 22:29:35 - HeartDisease_RiskDiscovery - INFO - ============================================================
+2026-07-14 22:29:35 - HeartDisease_RiskDiscovery - INFO - Step 3: Post-processing for model-type: tabnet
+2026-07-14 22:29:35 - HeartDisease_RiskDiscovery - INFO - ============================================================
+2026-07-14 22:29:39 - HeartDisease_RiskDiscovery - INFO - [v1] TabNet post-process OK. Outputs in: artifacts/fe/tabnet
+2026-07-14 22:29:39 - HeartDisease_RiskDiscovery - INFO - ============================================================
+2026-07-14 22:29:39 - HeartDisease_RiskDiscovery - INFO - Feature engineering v1 completed successfully!
+2026-07-14 22:29:39 - HeartDisease_RiskDiscovery - INFO - Next step: Modeling
+2026-07-14 22:29:39 - HeartDisease_RiskDiscovery - INFO - ============================================================

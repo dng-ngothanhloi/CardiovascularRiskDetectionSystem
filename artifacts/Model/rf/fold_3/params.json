@@ -1,0 +1,7 @@
+{
+  "n_estimators": 750,
+  "max_depth": 10,
+  "max_features": 0.4987175235880745,
+  "min_samples_leaf": 2,
+  "class_weight": "balanced"
+}
