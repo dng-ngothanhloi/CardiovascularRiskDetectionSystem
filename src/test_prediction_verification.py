@@ -402,14 +402,14 @@ def create_detailed_report(
             f.write(f"- **F1:** {f1_score(results_tabnet['y_true'], results_tabnet['y_pred_binary'], zero_division=0):.4f}\n\n")
         else:
             f.write("### TabNet\n\n")
-            f.write("- ⚠️ **TabNet model không thể load** (serialization issue)\n\n")
+            f.write("- [WARN] **TabNet model không thể load** (serialization issue)\n\n")
         
         # Detailed predictions table
         f.write("## 2. Detailed Predictions - RandomForest\n\n")
         f.write("| Sample ID | y_true | y_pred_prob | y_pred_binary | Correct |\n")
         f.write("|-----------|--------|-------------|---------------|----------|\n")
         for _, row in results_rf.iterrows():
-            correct_mark = "✓" if row['correct'] else "✗"
+            correct_mark = "[OK]" if row['correct'] else "[X]"
             f.write(f"| {int(row['sample_id'])} | {int(row['y_true'])} | {row['y_pred_prob']:.4f} | {int(row['y_pred_binary'])} | {correct_mark} |\n")
         f.write("\n")
         
@@ -418,12 +418,12 @@ def create_detailed_report(
             f.write("| Sample ID | y_true | y_pred_prob | y_pred_binary | Correct |\n")
             f.write("|-----------|--------|-------------|---------------|----------|\n")
             for _, row in results_tabnet.iterrows():
-                correct_mark = "✓" if row['correct'] else "✗"
+                correct_mark = "[OK]" if row['correct'] else "[X]"
                 f.write(f"| {int(row['sample_id'])} | {int(row['y_true'])} | {row['y_pred_prob']:.4f} | {int(row['y_pred_binary'])} | {correct_mark} |\n")
             f.write("\n")
         else:
             f.write("## 3. Detailed Predictions - TabNet\n\n")
-            f.write("⚠️ TabNet model không thể load.\n\n")
+            f.write("[WARN] TabNet model không thể load.\n\n")
         
         # Feature values for top samples
         f.write("## 4. Feature Values (Top 10 Samples by Prediction Probability)\n\n")
@@ -484,8 +484,8 @@ def create_detailed_report(
         f.write("## 6. Probability Spectrum Visualization\n\n")
         f.write(f"![Probability Spectrum]({plot_path.name})\n\n")
         f.write("*Hình 6.1: Biểu đồ phân phối probability cho các nhóm dự đoán. "
-                "🟢 TP (True Positive), 🔵 TN (True Negative), 🟠 FP (False Positive), "
-                "🔴 FN (False Negative - sai nghiêm trọng). Đường đứt nét đen: Threshold = 0.5. "
+                "TP (True Positive), TN (True Negative), FP (False Positive), "
+                "FN (False Negative - sai nghiêm trọng). Đường đứt nét đen: Threshold = 0.5. "
                 "Đường chấm chấm: Ideal calibration line.*\n\n")
         
         # Separate tables for correct predictions

@@ -169,9 +169,9 @@ def main():
                 rf_output,
                 'rf'
             )
-            logger.info("✅ RF predictions enriched successfully")
+            logger.info("[OK] RF predictions enriched successfully")
         except Exception as e:
-            logger.error(f"❌ Failed to enrich RF predictions: {e}")
+            logger.error(f"[ERROR] Failed to enrich RF predictions: {e}")
     else:
         logger.warning(f"RF predictions file not found: {rf_predictions}")
     
@@ -194,9 +194,9 @@ def main():
                 tabnet_output,
                 'tabnet'
             )
-            logger.info("✅ TabNet predictions enriched successfully")
+            logger.info("[OK] TabNet predictions enriched successfully")
         except Exception as e:
-            logger.error(f"❌ Failed to enrich TabNet predictions: {e}")
+            logger.error(f"[ERROR] Failed to enrich TabNet predictions: {e}")
     else:
         logger.warning(f"TabNet predictions file not found: {tabnet_predictions}")
     

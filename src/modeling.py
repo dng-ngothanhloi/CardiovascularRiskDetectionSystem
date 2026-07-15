@@ -682,7 +682,7 @@ def run_experiment(
                     scaler_path = out_fold / 'scaler.pkl'
                     assert model_path.exists(), f"model.h5 must exist in vae_tabnet joint mode at {model_path}"
                     assert scaler_path.exists(), f"scaler.pkl must exist in vae_tabnet joint mode at {scaler_path}"
-                    logger.info(f"✓ Verified joint model files exist: model.h5, scaler.pkl")
+                    logger.info(f"[OK] Verified joint model files exist: model.h5, scaler.pkl")
                 else:
                     # Two-stage training: encoder, decoder, and classifier must exist
                     encoder_path = out_fold / 'encoder.h5'
@@ -691,7 +691,7 @@ def run_experiment(
                     assert encoder_path.exists(), f"encoder.h5 must exist in vae_tabnet two-stage mode at {encoder_path}"
                     assert decoder_path.exists(), f"decoder.h5 must exist in vae_tabnet two-stage mode at {decoder_path}"
                     assert classifier_path.exists(), f"classifier.h5 must exist in vae_tabnet two-stage mode at {classifier_path}"
-                    logger.info(f"✓ Verified two-stage model files exist: encoder.h5, decoder.h5, classifier.h5")
+                    logger.info(f"[OK] Verified two-stage model files exist: encoder.h5, decoder.h5, classifier.h5")
                 
             # Save latent representations for downstream interpretation
             # Both two-stage and joint modes can extract latent z
@@ -707,7 +707,7 @@ def run_experiment(
                 decoder_path = out_fold / 'decoder.h5'
                 assert not encoder_path.exists(), f"encoder.h5 must NOT exist in tabnet mode (found at {encoder_path})"
                 assert not decoder_path.exists(), f"decoder.h5 must NOT exist in tabnet mode (found at {decoder_path})"
-                logger.info(f"✓ Verified no VAE files in tabnet mode")
+                logger.info(f"[OK] Verified no VAE files in tabnet mode")
             elif model_name == 'rf':
                 # RandomForest must NOT have encoder/decoder (it's not a deep learning model)
                 encoder_path = out_fold / 'encoder.h5'
@@ -717,7 +717,7 @@ def run_experiment(
                 # Verify model.joblib exists for RF
                 model_path = out_fold / 'model.joblib'
                 assert model_path.exists(), f"model.joblib must exist in rf mode at {model_path}"
-                logger.info(f"✓ Verified RF model.joblib exists, no VAE files")
+                logger.info(f"[OK] Verified RF model.joblib exists, no VAE files")
             
             # Store OOF predictions
             oof_predictions[idx_va] = p_va

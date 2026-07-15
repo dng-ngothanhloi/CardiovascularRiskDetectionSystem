@@ -882,7 +882,7 @@ def generate_data_recommendations(df: pd.DataFrame, output_dir: str) -> Dict[str
     # ==================== 1. Errors Fixed Automatically in Code ====================
     recommendations["code_fixed_errors"].append({
         "issue": "ZeroDivisionError in plot_distributions when num_cols is empty",
-        "status": "✅ Fixed",
+        "status": "[OK] Fixed",
         "solution": "Added check for empty num_cols before plotting and ensured n_cols >= 1",
         "location": "src/data_understanding.py: plot_distributions()",
         "impact": "Prevents crashes when no numeric columns are found"
@@ -890,7 +890,7 @@ def generate_data_recommendations(df: pd.DataFrame, output_dir: str) -> Dict[str
     
     recommendations["code_fixed_errors"].append({
         "issue": "Improved numeric column detection",
-        "status": "✅ Fixed",
+        "status": "[OK] Fixed",
         "solution": "Changed from dtype checking to pd.api.types.is_numeric_dtype() for better accuracy",
         "location": "src/data_understanding.py: main()",
         "impact": "Better detection of numeric columns including derived variables"
@@ -898,7 +898,7 @@ def generate_data_recommendations(df: pd.DataFrame, output_dir: str) -> Dict[str
     
     recommendations["code_fixed_errors"].append({
         "issue": "Missing error handling for empty num_cols in multiple functions",
-        "status": "✅ Fixed",
+        "status": "[OK] Fixed",
         "solution": "Added checks in outlier detection, correlation analysis, MI calculation, and adversarial validation",
         "location": "src/data_understanding.py: multiple functions",
         "impact": "Prevents errors when processing datasets with no numeric columns"
@@ -1038,7 +1038,7 @@ def generate_data_recommendations(df: pd.DataFrame, output_dir: str) -> Dict[str
     recommendations["other_recommendations"].append({
         "category": "Feature Engineering",
         "issue": "Derived variables created",
-        "recommendation": "⚠️  Derived variables should be created in feature_engineering.py. Consider: BMI × age interaction, pulse_pressure × cholesterol interaction",
+        "recommendation": "[WARN] Derived variables should be created in feature_engineering.py. Consider: BMI x age interaction, pulse_pressure x cholesterol interaction",
         "priority": "Medium"
     })
     
@@ -1088,7 +1088,7 @@ def generate_recommendations_markdown(recommendations: Dict[str, Any]) -> str:
     md.append("Generated from EDA analysis results.\n")
     
     # 1. Code Fixed Errors
-    md.append("## 1. ✅ Errors Fixed Automatically in Code\n")
+    md.append("## 1. Errors Fixed Automatically in Code\n")
     if recommendations["code_fixed_errors"]:
         for i, item in enumerate(recommendations["code_fixed_errors"], 1):
             md.append(f"### {i}. {item['issue']}\n")
@@ -1100,7 +1100,7 @@ def generate_recommendations_markdown(recommendations: Dict[str, Any]) -> str:
         md.append("No code fixes needed.\n\n")
     
     # 2. Manual Data Fixes
-    md.append("## 2. ⚠️ Errors Requiring Manual Data Correction\n")
+    md.append("## 2. Errors Requiring Manual Data Correction\n")
     if recommendations["manual_data_fixes"]:
         for i, item in enumerate(recommendations["manual_data_fixes"], 1):
             md.append(f"### {i}. {item['issue']}\n")
@@ -1113,7 +1113,7 @@ def generate_recommendations_markdown(recommendations: Dict[str, Any]) -> str:
         md.append("No manual data corrections needed.\n\n")
     
     # 3. Outlier Handling
-    md.append("## 3. 📊 Outlier Handling Recommendations\n")
+    md.append("## 3. Outlier Handling Recommendations\n")
     if recommendations["outlier_handling"]:
         for i, item in enumerate(recommendations["outlier_handling"], 1):
             md.append(f"### {i}. {item['feature']}\n")
@@ -1125,7 +1125,7 @@ def generate_recommendations_markdown(recommendations: Dict[str, Any]) -> str:
         md.append("No specific outlier handling recommendations.\n\n")
     
     # 4. Other Recommendations
-    md.append("## 4. 💡 Other Recommendations\n")
+    md.append("## 4. Other Recommendations\n")
     if recommendations["other_recommendations"]:
         for i, item in enumerate(recommendations["other_recommendations"], 1):
             md.append(f"### {i}. {item['category']}: {item['issue']}\n")
@@ -1165,7 +1165,7 @@ def generate_key_insights(df: pd.DataFrame, output_dir: str) -> None:
         insights.append(f"- No Disease: {cardio_dist.get(0, 0):.1f}%")
         insights.append(f"- Disease: {cardio_dist.get(1, 0):.1f}%")
         if abs(cardio_dist.get(0, 0) - cardio_dist.get(1, 0)) > 10:
-            insights.append("- ⚠️ Class imbalance detected - consider stratified sampling")
+            insights.append("- [WARN] Class imbalance detected - consider stratified sampling")
     
     # Insight 3: Age analysis
     if 'age_years' in df.columns and 'cardio' in df.columns:
@@ -1174,7 +1174,7 @@ def generate_key_insights(df: pd.DataFrame, output_dir: str) -> None:
         insights.append(f"- Average age (No Disease): {age_cardio.get(0, 0):.1f} years")
         insights.append(f"- Average age (Disease): {age_cardio.get(1, 0):.1f} years")
         if age_cardio.get(1, 0) > age_cardio.get(0, 0):
-            insights.append("- ✅ Older age is associated with higher cardiovascular risk")
+            insights.append("- [OK] Older age is associated with higher cardiovascular risk")
     
     # Insight 4: BMI analysis
     if 'bmi' in df.columns and 'cardio' in df.columns:
@@ -1198,11 +1198,11 @@ def generate_key_insights(df: pd.DataFrame, output_dir: str) -> None:
     
     # Insight 6: Recommendations
     insights.append("\n## 6. Recommendations for Preprocessing & Feature Engineering")
-    insights.append("- ⚠️  Derived variables (age_years, BMI, pulse_pressure) should be created in feature_engineering.py")
-    insights.append("- ✅ Flag data quality issues: ap_lo > ap_hi, extreme BP values")
-    insights.append("- ✅ Consider feature interactions: smoke × active, BMI × age")
-    insights.append("- ✅ Use stratified cross-validation due to potential class imbalance")
-    insights.append("- ✅ Focus on top MI features: age, BMI, pulse_pressure, cholesterol, glucose")
+    insights.append("- [WARN] Derived variables (age_years, BMI, pulse_pressure) should be created in feature_engineering.py")
+    insights.append("- [OK] Flag data quality issues: ap_lo > ap_hi, extreme BP values")
+    insights.append("- [OK] Consider feature interactions: smoke x active, BMI x age")
+    insights.append("- [OK] Use stratified cross-validation due to potential class imbalance")
+    insights.append("- [OK] Focus on top MI features: age, BMI, pulse_pressure, cholesterol, glucose")
     
     # Save insights
     insights_text = "\n".join(insights)
@@ -1527,10 +1527,10 @@ def main(args):
     logger.info(f"\n{'='*60}")
     logger.info("DATA QUALITY RECOMMENDATIONS SUMMARY")
     logger.info(f"{'='*60}")
-    logger.info(f"✅ Code-fixed errors: {len(recommendations['code_fixed_errors'])}")
-    logger.info(f"⚠️  Manual data fixes required: {len(recommendations['manual_data_fixes'])}")
-    logger.info(f"📊 Outlier handling recommendations: {len(recommendations['outlier_handling'])}")
-    logger.info(f"💡 Other recommendations: {len(recommendations['other_recommendations'])}")
+    logger.info(f"[OK] Code-fixed errors: {len(recommendations['code_fixed_errors'])}")
+    logger.info(f"[WARN] Manual data fixes required: {len(recommendations['manual_data_fixes'])}")
+    logger.info(f"[INFO] Outlier handling recommendations: {len(recommendations['outlier_handling'])}")
+    logger.info(f"[INFO] Other recommendations: {len(recommendations['other_recommendations'])}")
     logger.info(f"{'='*60}\n")
     
     logger.info(f"All EDA artifacts saved to {output_dir}")

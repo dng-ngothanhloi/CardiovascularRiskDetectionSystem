@@ -189,9 +189,9 @@ def _render_methodology_section(
                 
                 # Class balance
                 if abs(pct_0 - pct_1) < 1.0:
-                    lines.append("- **Class balance:** ✅ Perfectly balanced (50/50)")
+                    lines.append("- **Class balance:** [OK] Perfectly balanced (50/50)")
                 else:
-                    lines.append(f"- **Class balance:** ⚠️ Imbalanced ({pct_0:.1f}% / {pct_1:.1f}%)")
+                    lines.append(f"- **Class balance:** [WARN] Imbalanced ({pct_0:.1f}% / {pct_1:.1f}%)")
         
         # Feature Coverage
         lines.append("")
@@ -210,7 +210,7 @@ def _render_methodology_section(
         if missing_count == 0:
             lines.append("- No missing values in binarized itemset")
         else:
-            lines.append(f"- ⚠️ {missing_count} missing values found in binarized itemset")
+            lines.append(f"- [WARN] {missing_count} missing values found in binarized itemset")
     else:
         lines.append("**Binarized Itemset:**")
         lines.append("- Data not available for quality assessment")
@@ -391,9 +391,9 @@ def _render_best_and_lowest_confidence_rules(rules_df: pd.DataFrame) -> str:
         
         # Add warning note based on confidence level
         if confidence < 0.65:
-            note = "⚠️ Confidence < 65% - Cần kiểm tra lâm sàng"
+            note = "[WARN] Confidence < 65% - Cần kiểm tra lâm sàng"
         elif confidence < 0.70:
-            note = "⚠️ Confidence < 70% - Nên xem xét cẩn thận"
+            note = "[WARN] Confidence < 70% - Nên xem xét cẩn thận"
         else:
             note = "Confidence tương đối tốt"
         

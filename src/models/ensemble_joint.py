@@ -296,7 +296,7 @@ class JointVAETabNetTrainer:
                 # Check for scale mismatch
                 scale_ratio = X_va.std() / (X_tr.std() + 1e-10)
                 if scale_ratio > 2.0 or scale_ratio < 0.5:
-                    logger.warning(f"⚠️  Scale mismatch detected! Val std / Train std = {scale_ratio:.4f}")
+                    logger.warning(f"[WARN] Scale mismatch detected! Val std / Train std = {scale_ratio:.4f}")
                     logger.warning(f"   Normalizing data to fix this issue...")
             
             # Normalize input data using StandardScaler (fit on train, transform both train and val)
