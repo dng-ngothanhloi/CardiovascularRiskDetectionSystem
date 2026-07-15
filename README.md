@@ -145,7 +145,7 @@ python -m src.feature_engineering --config $CONFIG --model-type rf
 python -m src.feature_engineering --config $CONFIG --model-type tabnet
 
 python -m src.modeling --config configs/default.yaml --model rf
-python -m src.modeling --config configs/default.yaml --model tabnet
+python -m src.modeling --config configs/tabnet_baseline.yaml --model tabnet
 # optional: python -m src.modeling --config $CONFIG --model vae_tabnet --joint
 
 # [5] L1 — OOF (Train) + Test final_model (deploy)
@@ -201,7 +201,8 @@ make pipeline-l1 CONFIG=configs/fast.yaml
 
 | File | Use when |
 |------|----------|
-| `configs/default.yaml` | Final / paper runs (`hpo.n_trials: 30`, TabNet `epochs: 80`) |
+| `configs/default.yaml` | Final / paper runs (RF HPO `n_trials: 30`; TabNet params pinned sparse) |
+| `configs/tabnet_baseline.yaml` | TabNet train: HPO off + baseline fold_0 sparse params (~19 L3 rules) |
 | `configs/fast.yaml` | Faster iteration (`n_trials: 10`) |
 | `configs/no_hpo.yaml` | Smoke tests (`hpo.enabled: false`) |
 | `configs/l3_discovery.yaml` | L3 Apriori / attention→itemsets |

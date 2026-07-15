@@ -23,6 +23,7 @@ else
 endif
 
 CONFIG        := configs/default.yaml
+TABNET_CONFIG := configs/tabnet_baseline.yaml   # HPO off + sparse baseline params (~19 L3 rules)
 L3_CONFIG     := configs/l3_discovery.yaml
 PYTHON        := python3
 SRC           := src
@@ -64,6 +65,7 @@ help: ## Show available targets
 	@echo ""
 	@echo "Config override:"
 	@echo "  make train-rf CONFIG=configs/no_hpo.yaml"
+	@echo "  make train-tabnet TABNET_CONFIG=configs/default.yaml  # re-enable HPO for TabNet"
 	@echo "  make evaluate N_BOOT=200"
 	@echo ""
 	@echo "Detail: docs/Flow-Pipeline.md"
@@ -115,10 +117,10 @@ train-rf: ## Train RandomForest (5-fold CV + optional HPO/test scoring)
 	$(PYTHON) -m $(SRC).modeling --config $(CONFIG) --model rf
 	@echo "RF → $(MODEL_DIR)/rf/"
 
-train-tabnet: ## Train TabNet
+train-tabnet: ## Train TabNet (pinned sparse baseline; override with TABNET_CONFIG=...)
 	@mkdir -p $(MODEL_DIR)
-	$(PYTHON) -m $(SRC).modeling --config $(CONFIG) --model tabnet
-	@echo "TabNet → $(MODEL_DIR)/tabnet/"
+	$(PYTHON) -m $(SRC).modeling --config $(TABNET_CONFIG) --model tabnet
+	@echo "TabNet → $(MODEL_DIR)/tabnet/ (config=$(TABNET_CONFIG))"
 
 train-vae-tabnet: ## Train VAE-TabNet (joint training)
 	@mkdir -p $(MODEL_DIR)

@@ -2,6 +2,6 @@
   "use_max_depth": false,
   "use_max_features_cat": true,
   "max_features": "sqrt",
-  "n_estimators": 650,
+  "n_estimators": 1300,
   "min_samples_leaf": 14
 }

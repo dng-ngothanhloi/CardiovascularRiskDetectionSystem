@@ -2,21 +2,21 @@
   "code_fixed_errors": [
     {
       "issue": "ZeroDivisionError in plot_distributions when num_cols is empty",
-      "status": "\u2705 Fixed",
+      "status": "[OK] Fixed",
       "solution": "Added check for empty num_cols before plotting and ensured n_cols >= 1",
       "location": "src/data_understanding.py: plot_distributions()",
       "impact": "Prevents crashes when no numeric columns are found"
     },
     {
       "issue": "Improved numeric column detection",
-      "status": "\u2705 Fixed",
+      "status": "[OK] Fixed",
       "solution": "Changed from dtype checking to pd.api.types.is_numeric_dtype() for better accuracy",
       "location": "src/data_understanding.py: main()",
       "impact": "Better detection of numeric columns including derived variables"
     },
     {
       "issue": "Missing error handling for empty num_cols in multiple functions",
-      "status": "\u2705 Fixed",
+      "status": "[OK] Fixed",
       "solution": "Added checks in outlier detection, correlation analysis, MI calculation, and adversarial validation",
       "location": "src/data_understanding.py: multiple functions",
       "impact": "Prevents errors when processing datasets with no numeric columns"
@@ -75,7 +75,7 @@
     {
       "category": "Feature Engineering",
       "issue": "Derived variables created",
-      "recommendation": "\u26a0\ufe0f  Derived variables should be created in feature_engineering.py. Consider: BMI \u00d7 age interaction, pulse_pressure \u00d7 cholesterol interaction",
+      "recommendation": "[WARN] Derived variables should be created in feature_engineering.py. Consider: BMI x age interaction, pulse_pressure x cholesterol interaction",
       "priority": "Medium"
     },
     {

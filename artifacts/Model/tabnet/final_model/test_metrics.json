@@ -1,0 +1,51 @@
+{
+  "roc_auc": 0.797921661429862,
+  "pr_auc": 0.775884182338508,
+  "accuracy": 0.7296949782127294,
+  "f1": 0.7201597396834788,
+  "brier": 0.1825137516445433,
+  "ece": 0.01777294203026614,
+  "f1_best": 0.741090542752802,
+  "f1_recall_08": 0.7418665996241439,
+  "threshold_recall_08": 0.3283072265513123,
+  "f1_recall_09": 0.7335700564160109,
+  "threshold_recall_09": 0.26799925058098534,
+  "threshold_deploy_oof": 0.3599999999999999,
+  "f1_at_oof_threshold": 0.7403939925882582,
+  "accuracy_at_oof_threshold": 0.7147653403814558,
+  "confusion_matrix_oof_threshold": {
+    "matrix": [
+      [
+        4312,
+        2692
+      ],
+      [
+        1301,
+        5694
+      ]
+    ],
+    "tn": 4312,
+    "fp": 2692,
+    "fn": 1301,
+    "tp": 5694
+  },
+  "confusion_matrix_threshold_0.5": {
+    "matrix": [
+      [
+        5346,
+        1658
+      ],
+      [
+        2126,
+        4869
+      ]
+    ],
+    "tn": 5346,
+    "fp": 1658,
+    "fn": 2126,
+    "tp": 4869
+  },
+  "n_test": 13999,
+  "threshold_source": "oof",
+  "anti_leak": "Params/calibrator/threshold from Train only; Test used once for scoring"
+}

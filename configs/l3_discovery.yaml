@@ -9,24 +9,24 @@ paths:
 attention_to_item:
   agg: mean
   norm: per_feature_max
-  tau: 0.5
+  tau: p80      # was: 0.5  # percentile of importance scores
   min_active_features: 1
 
 apriori:
-  min_support: 0.02
+  min_support: 0.03     # was: 0.02
   metric: confidence
   min_threshold: 0.6
   max_len: 4
   use_colnames: true
 
 postprocess:
-  min_lift: 1.2
+  min_lift: 1.20
   min_confidence: 0.6
-  min_support: 0.02
+  min_support: 0.03     # was: 0.02
   topk: 200
   redundancy: true
   stability_bootstrap:
-    enabled: true
+    enabled: false
     n_boot: 200
     sample_frac: 0.8
     min_presence: 0.6

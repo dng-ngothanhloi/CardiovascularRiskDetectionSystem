@@ -2,11 +2,11 @@
 
 Generated from EDA analysis results.
 
-## 1. ✅ Errors Fixed Automatically in Code
+## 1. Errors Fixed Automatically in Code
 
 ### 1. ZeroDivisionError in plot_distributions when num_cols is empty
 
-- **Status:** ✅ Fixed
+- **Status:** [OK] Fixed
 
 - **Solution:** Added check for empty num_cols before plotting and ensured n_cols >= 1
 
@@ -17,7 +17,7 @@ Generated from EDA analysis results.
 
 ### 2. Improved numeric column detection
 
-- **Status:** ✅ Fixed
+- **Status:** [OK] Fixed
 
 - **Solution:** Changed from dtype checking to pd.api.types.is_numeric_dtype() for better accuracy
 
@@ -28,7 +28,7 @@ Generated from EDA analysis results.
 
 ### 3. Missing error handling for empty num_cols in multiple functions
 
-- **Status:** ✅ Fixed
+- **Status:** [OK] Fixed
 
 - **Solution:** Added checks in outlier detection, correlation analysis, MI calculation, and adversarial validation
 
@@ -37,7 +37,7 @@ Generated from EDA analysis results.
 - **Impact:** Prevents errors when processing datasets with no numeric columns
 
 
-## 2. ⚠️ Errors Requiring Manual Data Correction
+## 2. Errors Requiring Manual Data Correction
 
 ### 1. ap_lo > ap_hi: 1234 records
 
@@ -78,7 +78,7 @@ Generated from EDA analysis results.
 - **Impact:** 59 records (0.08%) have extreme values
 
 
-## 3. 📊 Outlier Handling Recommendations
+## 3. Outlier Handling Recommendations
 
 ### 1. Height
 
@@ -115,13 +115,13 @@ Generated from EDA analysis results.
 - **Rationale:** Different features require different outlier handling strategies based on domain knowledge
 
 
-## 4. 💡 Other Recommendations
+## 4. Other Recommendations
 
 ### 1. Feature Engineering: Derived variables created
 
 - **Priority:** Medium
 
-- **Recommendation:** ⚠️  Derived variables should be created in feature_engineering.py. Consider: BMI × age interaction, pulse_pressure × cholesterol interaction
+- **Recommendation:** [WARN] Derived variables should be created in feature_engineering.py. Consider: BMI x age interaction, pulse_pressure x cholesterol interaction
 
 
 ### 2. Feature Selection: High correlation between features

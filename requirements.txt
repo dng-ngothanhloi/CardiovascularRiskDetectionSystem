@@ -1,11 +1,25 @@
-numpy
-pandas
-scikit-learn>=1.4
-optuna>=3.0
+# Baseline reproduction environment
+# Pins match artifacts-baseline/Model/tabnet/run_info.json:
+#   python 3.11.13 | tensorflow 2.17.0 | numpy 1.26.4 | scikit-learn 1.7.2
+# Goal: reproduce the baseline TabNet attention (and thus the 19 L3 rules).
+# Recommended: create a fresh venv with Python 3.11.x before installing.
+#   python3.11 -m venv .venv-baseline && source .venv-baseline/bin/activate
+#   pip install -r requirements-baseline.txt
+
+# --- Core (exact baseline versions) ---
+numpy==1.26.4
+scikit-learn==1.7.2
+tensorflow==2.17.0
+tensorboard==2.17.1
+
+# --- Constrained for TensorFlow 2.17 compatibility ---
+# TF 2.17 requires protobuf<5 and numpy<2; keep pandas on the 2.x line (numpy 1.26 compatible)
+protobuf>=3.20.3,<5.0.0
+pandas>=2.0,<2.3
+
+# --- Other deps (flexible, kept compatible with the pins above) ---
+optuna>=3.0,<4.0
 matplotlib
-tensorflow>=2.15
-tensorboard>=2.15
-protobuf>=5.28.0
 joblib
 pyyaml
 mlxtend>=0.22

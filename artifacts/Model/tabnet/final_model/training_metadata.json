@@ -1,0 +1,84 @@
+{
+  "model_name": "tabnet",
+  "joint_training": false,
+  "n_train": 55993,
+  "n_features": 19,
+  "seed": 42,
+  "calibration_source": "oof_predictions",
+  "created_at": "2026-07-16T00:15:26.305522",
+  "fold_params_candidates": [
+    {
+      "n_d": 12,
+      "n_a": 12,
+      "n_steps": 4,
+      "gamma": 1.625957341248133,
+      "lambda_sparse": 0.0005927172136384618,
+      "batch_size": 128,
+      "epochs": 80,
+      "lr": 0.0024260876636955963,
+      "dropout": 0.15580833938492766,
+      "input_dim": 19
+    },
+    {
+      "n_d": 12,
+      "n_a": 12,
+      "n_steps": 4,
+      "gamma": 1.625957341248133,
+      "lambda_sparse": 0.0005927172136384618,
+      "batch_size": 128,
+      "epochs": 80,
+      "lr": 0.0024260876636955963,
+      "dropout": 0.15580833938492766,
+      "input_dim": 19
+    },
+    {
+      "n_d": 12,
+      "n_a": 12,
+      "n_steps": 4,
+      "gamma": 1.625957341248133,
+      "lambda_sparse": 0.0005927172136384618,
+      "batch_size": 128,
+      "epochs": 80,
+      "lr": 0.0024260876636955963,
+      "dropout": 0.15580833938492766,
+      "input_dim": 19
+    },
+    {
+      "n_d": 12,
+      "n_a": 12,
+      "n_steps": 4,
+      "gamma": 1.625957341248133,
+      "lambda_sparse": 0.0005927172136384618,
+      "batch_size": 128,
+      "epochs": 80,
+      "lr": 0.0024260876636955963,
+      "dropout": 0.15580833938492766,
+      "input_dim": 19
+    },
+    {
+      "n_d": 12,
+      "n_a": 12,
+      "n_steps": 4,
+      "gamma": 1.625957341248133,
+      "lambda_sparse": 0.0005927172136384618,
+      "batch_size": 128,
+      "epochs": 80,
+      "lr": 0.0024260876636955963,
+      "dropout": 0.15580833938492766,
+      "input_dim": 19
+    }
+  ],
+  "full_train_refit_epochs": 12,
+  "param_strategy": "best_fold_val_pr_auc",
+  "param_strategy_note": "Selected resolved params from fold with highest validation pr_auc. No Test data used for selection.",
+  "selection_metric": "pr_auc",
+  "selected_fold": 2,
+  "selected_fold_val_score": 0.7972751629967461,
+  "fold_val_scores": [
+    0.7865975032747817,
+    0.7896886032669437,
+    0.7972751629967461,
+    0.781944716540609,
+    0.7761407019823875
+  ]
+}

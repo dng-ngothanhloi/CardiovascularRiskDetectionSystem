@@ -5,41 +5,41 @@
   "n_features": 22,
   "seed": 42,
   "calibration_source": "oof_predictions",
-  "created_at": "2026-07-15T06:35:32.870750",
+  "created_at": "2026-07-15T14:31:16.041840",
   "fold_params_candidates": [
     {
-      "n_estimators": 650,
+      "n_estimators": 1300,
       "max_depth": null,
       "max_features": "sqrt",
       "min_samples_leaf": 14,
       "class_weight": "balanced"
     },
     {
-      "n_estimators": 450,
+      "n_estimators": 1000,
       "max_depth": 10,
-      "max_features": "log2",
-      "min_samples_leaf": 11,
+      "max_features": "sqrt",
+      "min_samples_leaf": 5,
       "class_weight": "balanced"
     },
     {
       "n_estimators": 200,
-      "max_depth": null,
-      "max_features": "log2",
+      "max_depth": 9,
+      "max_features": 0.20998504549206187,
       "min_samples_leaf": 13,
       "class_weight": "balanced"
     },
     {
-      "n_estimators": 750,
-      "max_depth": 10,
-      "max_features": 0.4987175235880745,
-      "min_samples_leaf": 2,
+      "n_estimators": 1250,
+      "max_depth": 9,
+      "max_features": 0.6272883547933035,
+      "min_samples_leaf": 11,
       "class_weight": "balanced"
     },
     {
-      "n_estimators": 1500,
-      "max_depth": 10,
-      "max_features": 0.6883716447911362,
-      "min_samples_leaf": 12,
+      "n_estimators": 1050,
+      "max_depth": 9,
+      "max_features": 0.307261813931645,
+      "min_samples_leaf": 2,
       "class_weight": "balanced"
     }
   ],
@@ -48,12 +48,12 @@
   "param_strategy_note": "Selected resolved params from fold with highest validation pr_auc. No Test data used for selection.",
   "selection_metric": "pr_auc",
   "selected_fold": 2,
-  "selected_fold_val_score": 0.7960807658294122,
+  "selected_fold_val_score": 0.7968209258009323,
   "fold_val_scores": [
-    0.7833298809424045,
-    0.7889756383031792,
-    0.7960807658294122,
-    0.7847059584829599,
-    0.7813815381243768
+    0.7834104879074915,
+    0.7888146470479206,
+    0.7968209258009323,
+    0.7846829284793496,
+    0.7806167503561956
   ]
 }

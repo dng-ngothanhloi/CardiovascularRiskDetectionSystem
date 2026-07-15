@@ -395,11 +395,15 @@ def hpo_search(
         }
     
     n_trials = hpo_cfg.get('n_trials', 30)
-    timeout_min = hpo_cfg.get('timeout_min', 45)
+    # Default to no wall-clock timeout so runs are reproducible (limited only by
+    # n_trials). A positive timeout_min in the config re-enables the time limit.
+    timeout_min = hpo_cfg.get('timeout_min', None)
     
-    # Create study
+    # Seed the TPE sampler so the trial sequence is deterministic across runs
+    # (identical machine + library versions -> identical selected params).
     study = optuna.create_study(
         direction='maximize',
+        sampler=optuna.samplers.TPESampler(seed=seed),
         pruner=MedianPruner() if hpo_cfg.get('pruner') == 'median' else None
     )
     
@@ -414,7 +418,8 @@ def hpo_search(
         raise ValueError(f"Unknown model name: {model_name}")
     
     # Optimize
-    logger.info(f"Starting HPO for {model_name} (n_trials={n_trials}, timeout={timeout_min}min)")
+    timeout_desc = f"{timeout_min}min" if timeout_min else "none"
+    logger.info(f"Starting HPO for {model_name} (n_trials={n_trials}, timeout={timeout_desc}, sampler_seed={seed})")
     study.optimize(
         objective,
         n_trials=n_trials,

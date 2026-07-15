@@ -199,3 +199,66 @@ dtype: int64
 2026-07-14 22:29:39 - HeartDisease_RiskDiscovery - INFO - Feature engineering v1 completed successfully!
 2026-07-14 22:29:39 - HeartDisease_RiskDiscovery - INFO - Next step: Modeling
 2026-07-14 22:29:39 - HeartDisease_RiskDiscovery - INFO - ============================================================
+2026-07-16 00:18:36 - HeartDisease_RiskDiscovery - INFO - ======================================================================
+2026-07-16 00:18:36 - HeartDisease_RiskDiscovery - INFO - STAGE 4 - EVALUATION
+2026-07-16 00:18:36 - HeartDisease_RiskDiscovery - INFO - ======================================================================
+2026-07-16 00:18:36 - HeartDisease_RiskDiscovery - INFO - Model root: artifacts/Model
+2026-07-16 00:18:36 - HeartDisease_RiskDiscovery - INFO - Output directory: artifacts/Eval
+2026-07-16 00:18:36 - HeartDisease_RiskDiscovery - INFO - Bootstrap samples: 2000
+2026-07-16 00:18:36 - HeartDisease_RiskDiscovery - INFO - Random seed: 42
+2026-07-16 00:18:36 - HeartDisease_RiskDiscovery - INFO - Generate plots: True
+2026-07-16 00:18:36 - HeartDisease_RiskDiscovery - INFO - Loaded OOF from artifacts/Model/rf/oof_predictions.csv, shape: (55993, 8)
+2026-07-16 00:18:36 - HeartDisease_RiskDiscovery - INFO -   Final columns: ['y_true', 'y_pred', 'id', 'fold', 'model']
+2026-07-16 00:18:36 - HeartDisease_RiskDiscovery - INFO - Evaluating model: rf
+2026-07-16 00:18:37 - HeartDisease_RiskDiscovery - INFO - Loaded OOF from artifacts/Model/tabnet/oof_predictions.csv, shape: (55993, 8)
+2026-07-16 00:18:37 - HeartDisease_RiskDiscovery - INFO -   Final columns: ['y_true', 'y_pred', 'id', 'fold', 'model']
+2026-07-16 00:18:37 - HeartDisease_RiskDiscovery - INFO - Evaluating model: tabnet
+2026-07-16 00:18:37 - HeartDisease_RiskDiscovery - WARNING - OOF file not found: artifacts/Model/vae_tabnet/oof_predictions.csv
+2026-07-16 00:18:37 - HeartDisease_RiskDiscovery - WARNING - Skipping vae_tabnet (no OOF data)
+2026-07-16 00:18:37 - HeartDisease_RiskDiscovery - INFO - Computing paired bootstrap (OOF) for RF vs TabNet...
+2026-07-16 00:18:37 - HeartDisease_RiskDiscovery - INFO -   Aligned 55993 samples by id and y_true
+2026-07-16 00:19:14 - HeartDisease_RiskDiscovery - INFO -   Δ(AP_A - AP_B) = 0.0009 [-0.0017, 0.0033]
+2026-07-16 00:19:14 - HeartDisease_RiskDiscovery - WARNING - Skipping TabNet vs VAE→TabNet (missing models)
+2026-07-16 00:19:14 - HeartDisease_RiskDiscovery - WARNING - Skipping RF vs VAE→TabNet (missing models)
+2026-07-16 00:19:14 - HeartDisease_RiskDiscovery - INFO - Loaded test predictions from artifacts/Model/rf/final_model/test_predictions.csv (source=final_model), shape: (13999, 5)
+2026-07-16 00:19:14 - HeartDisease_RiskDiscovery - INFO - Evaluating model: rf
+2026-07-16 00:19:14 - HeartDisease_RiskDiscovery - INFO - Test eval rf: PR-AUC=0.7723182898788126, ROC-AUC=0.7969495119504875, F1@OOF_thr=0.7387105194466197 (thr=0.34999999999999987)
+2026-07-16 00:19:14 - HeartDisease_RiskDiscovery - INFO - Loaded test predictions from artifacts/Model/tabnet/final_model/test_predictions.csv (source=final_model), shape: (13999, 5)
+2026-07-16 00:19:14 - HeartDisease_RiskDiscovery - INFO - Evaluating model: tabnet
+2026-07-16 00:19:14 - HeartDisease_RiskDiscovery - INFO - Test eval tabnet: PR-AUC=0.775884182338508, ROC-AUC=0.797921661429862, F1@OOF_thr=0.7403939925882582 (thr=0.3599999999999999)
+2026-07-16 00:19:14 - HeartDisease_RiskDiscovery - WARNING - Test predictions not found under artifacts/Model/vae_tabnet
+2026-07-16 00:19:14 - HeartDisease_RiskDiscovery - INFO - Computing paired bootstrap (Test) for RF vs TabNet...
+2026-07-16 00:19:14 - HeartDisease_RiskDiscovery - INFO -   Aligned 13999 samples by id and y_true
+2026-07-16 00:19:23 - HeartDisease_RiskDiscovery - INFO -   Test Δ(AP_A - AP_B) = -0.0036 [-0.0084, 0.0011]
+2026-07-16 00:19:23 - HeartDisease_RiskDiscovery - INFO - Generating plots...
+2026-07-16 00:19:23 - HeartDisease_RiskDiscovery - INFO - Saved PR overlay to artifacts/Eval/plots/pr_overlay.png
+2026-07-16 00:19:23 - HeartDisease_RiskDiscovery - INFO - Saved ROC overlay to artifacts/Eval/plots/roc_overlay.png
+2026-07-16 00:19:23 - HeartDisease_RiskDiscovery - INFO - Saved reliability overlay to artifacts/Eval/plots/reliability_overlay.png
+2026-07-16 00:19:24 - HeartDisease_RiskDiscovery - INFO - Saved confusion matrix to artifacts/Eval/plots/confusion_matrix_rf.png
+2026-07-16 00:19:24 - HeartDisease_RiskDiscovery - INFO - Saved confusion matrix to artifacts/Eval/plots/confusion_matrix_tabnet.png
+2026-07-16 00:19:24 - HeartDisease_RiskDiscovery - INFO - Saved confusion matrix to artifacts/Eval/plots/confusion_matrix_test_rf.png
+2026-07-16 00:19:24 - HeartDisease_RiskDiscovery - INFO - Saved confusion matrix to artifacts/Eval/plots/confusion_matrix_test_tabnet.png
+2026-07-16 00:19:24 - HeartDisease_RiskDiscovery - INFO - Written summary JSON to artifacts/Eval/summary.json
+2026-07-16 00:19:24 - HeartDisease_RiskDiscovery - INFO - Written markdown report to artifacts/Eval/report.md
+2026-07-16 00:19:24 - HeartDisease_RiskDiscovery - INFO - ======================================================================
+2026-07-16 00:19:24 - HeartDisease_RiskDiscovery - INFO - EVALUATION COMPLETE
+2026-07-16 00:19:24 - HeartDisease_RiskDiscovery - INFO - ======================================================================
+2026-07-16 00:21:15 - HeartDisease_RiskDiscovery - INFO - ======================================================================
+2026-07-16 00:21:15 - HeartDisease_RiskDiscovery - INFO - TEST PREDICTION VERIFICATION
+2026-07-16 00:21:15 - HeartDisease_RiskDiscovery - INFO - ======================================================================
+2026-07-16 00:21:15 - HeartDisease_RiskDiscovery - INFO - Loading test data...
+2026-07-16 00:21:15 - HeartDisease_RiskDiscovery - INFO - Loaded test data for rf: (13999, 22), features: 22
+2026-07-16 00:21:15 - HeartDisease_RiskDiscovery - INFO - Loaded test data for tabnet: (13999, 19), features: 19
+2026-07-16 00:21:15 - HeartDisease_RiskDiscovery - INFO - Loading trained models...
+2026-07-16 00:21:16 - HeartDisease_RiskDiscovery - INFO - RandomForest initialized with resolved params: {'n_estimators': 1300, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 14, 'class_weight': 'balanced', 'random_state': 42, 'n_jobs': -1}
+2026-07-16 00:21:16 - HeartDisease_RiskDiscovery - INFO - TabNet initialized: input_dim=19, params={'n_d': 12, 'n_a': 12, 'n_steps': 4, 'gamma': 1.625957341248133, 'lambda_sparse': 0.0005927172136384618, 'batch_size': 128, 'epochs': 80, 'lr': 0.0024260876636955963, 'dropout': 0.15580833938492766, 'input_dim': 19}
+2026-07-16 00:21:16 - HeartDisease_RiskDiscovery - INFO - TabNet model loaded successfully (weights only - new format)
+2026-07-16 00:21:16 - HeartDisease_RiskDiscovery - INFO - Using 20 sample IDs from src/test_prediction_input.txt.
+2026-07-16 00:21:17 - HeartDisease_RiskDiscovery - INFO - Selected 20 test samples for verification
+2026-07-16 00:21:17 - HeartDisease_RiskDiscovery - INFO - Selected 20 test samples for verification
+2026-07-16 00:21:17 - HeartDisease_RiskDiscovery - INFO - Saved prediction CSVs to artifacts/Interpretation/test_prediction_result
+2026-07-16 00:21:18 - HeartDisease_RiskDiscovery - INFO - Probability spectrum plot saved to artifacts/Interpretation/test_prediction_result/probability_spectrum.png
+2026-07-16 00:21:18 - HeartDisease_RiskDiscovery - INFO - Detailed report saved to artifacts/Interpretation/test_prediction_result/Test_Prediction_Verification.md
+2026-07-16 00:21:18 - HeartDisease_RiskDiscovery - INFO - ======================================================================
+2026-07-16 00:21:18 - HeartDisease_RiskDiscovery - INFO - VERIFICATION COMPLETE
+2026-07-16 00:21:18 - HeartDisease_RiskDiscovery - INFO - ======================================================================

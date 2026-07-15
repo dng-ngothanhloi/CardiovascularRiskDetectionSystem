@@ -22,7 +22,7 @@ modeling:
   hpo:
     enabled: true
     n_trials: 30
-    timeout_min: 45
+    timeout_min: null   # null = no wall-clock limit (reproducible; bounded only by n_trials)
     pruner: median
     composite_weights: [0.4, 0.4, 0.2]  # [roc_auc, pr_auc, accuracy] - weights for composite score optimization
   calibration:
@@ -40,16 +40,19 @@ modeling:
 rf:
   class_weight: balanced
 
+# Pinned to baseline fold_0 (sparse attention → ~19 L3 rules).
+# When training TabNet, use configs/tabnet_baseline.yaml (hpo.enabled: false)
+# so these defaults are applied instead of Optuna searching a flat-attention region.
 tabnet:
-  n_d: 16
-  n_a: 16
-  n_steps: 5
-  gamma: 1.5
-  lambda_sparse: 1e-4
-  batch_size: 256
+  n_d: 12
+  n_a: 12
+  n_steps: 4
+  gamma: 1.625957341248133
+  lambda_sparse: 0.0005927172136384618
+  batch_size: 128
   epochs: 80
-  lr: 1e-3
-  dropout: 0.0
+  lr: 0.0024260876636955963
+  dropout: 0.15580833938492766
 
 vae:
   latent_dim: 16

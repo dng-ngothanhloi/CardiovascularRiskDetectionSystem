@@ -1,0 +1,17 @@
+{
+  "deploy_source": "final_model",
+  "deploy_predictions": "artifacts/Model/tabnet/final_model/test_predictions.csv",
+  "root_test_predictions": "artifacts/Model/tabnet/test_predictions.csv",
+  "ensemble_diagnostic": {
+    "predictions": "artifacts/Model/tabnet/test_ensemble_predictions.csv",
+    "metrics": "artifacts/Model/tabnet/test_ensemble_metrics.json",
+    "method": "mean_calibrated_fold_proba",
+    "n_folds": 5
+  },
+  "anti_leak": {
+    "param_selection": "best_fold_val_pr_auc",
+    "calibration": "oof_predictions",
+    "threshold_deploy": "oof_predictions",
+    "test_used_for": "scoring_only_after_final_model_frozen"
+  }
+}

@@ -13,8 +13,8 @@
 - Physical activity reduces risk: 53.6% vs 49.1%
 
 ## 6. Recommendations for Preprocessing & Feature Engineering
-- ⚠️  Derived variables (age_years, BMI, pulse_pressure) should be created in feature_engineering.py
-- ✅ Flag data quality issues: ap_lo > ap_hi, extreme BP values
-- ✅ Consider feature interactions: smoke × active, BMI × age
-- ✅ Use stratified cross-validation due to potential class imbalance
-- ✅ Focus on top MI features: age, BMI, pulse_pressure, cholesterol, glucose
+- [WARN] Derived variables (age_years, BMI, pulse_pressure) should be created in feature_engineering.py
+- [OK] Flag data quality issues: ap_lo > ap_hi, extreme BP values
+- [OK] Consider feature interactions: smoke x active, BMI x age
+- [OK] Use stratified cross-validation due to potential class imbalance
+- [OK] Focus on top MI features: age, BMI, pulse_pressure, cholesterol, glucose

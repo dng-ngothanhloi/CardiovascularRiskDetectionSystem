@@ -1,0 +1,32 @@
+2026-07-16 00:10:15 - HeartDisease_RiskDiscovery - INFO - TabNet initialized: input_dim=19, params={'n_d': 12, 'n_a': 12, 'n_steps': 4, 'gamma': 1.625957341248133, 'lambda_sparse': 0.0005927172136384618, 'batch_size': 128, 'epochs': 80, 'lr': 0.0024260876636955963, 'dropout': 0.15580833938492766}
+2026-07-16 00:10:15 - HeartDisease_RiskDiscovery - INFO - Training TabNet on 44794 samples
+2026-07-16 00:11:19 - HeartDisease_RiskDiscovery - INFO - TabNet training completed
+2026-07-16 00:11:21 - HeartDisease_RiskDiscovery - INFO - TabNet weights saved to artifacts/Model/tabnet/fold_0/model.weights.h5 (weights only format: .weights.h5)
+2026-07-16 00:11:21 - HeartDisease_RiskDiscovery - INFO - TabNet initialized: input_dim=19, params={'n_d': 12, 'n_a': 12, 'n_steps': 4, 'gamma': 1.625957341248133, 'lambda_sparse': 0.0005927172136384618, 'batch_size': 128, 'epochs': 80, 'lr': 0.0024260876636955963, 'dropout': 0.15580833938492766}
+2026-07-16 00:11:21 - HeartDisease_RiskDiscovery - INFO - Training TabNet on 44794 samples
+2026-07-16 00:12:38 - HeartDisease_RiskDiscovery - INFO - TabNet training completed
+2026-07-16 00:12:39 - HeartDisease_RiskDiscovery - INFO - TabNet weights saved to artifacts/Model/tabnet/fold_1/model.weights.h5 (weights only format: .weights.h5)
+2026-07-16 00:12:39 - HeartDisease_RiskDiscovery - INFO - TabNet initialized: input_dim=19, params={'n_d': 12, 'n_a': 12, 'n_steps': 4, 'gamma': 1.625957341248133, 'lambda_sparse': 0.0005927172136384618, 'batch_size': 128, 'epochs': 80, 'lr': 0.0024260876636955963, 'dropout': 0.15580833938492766}
+2026-07-16 00:12:39 - HeartDisease_RiskDiscovery - INFO - Training TabNet on 44794 samples
+2026-07-16 00:13:31 - HeartDisease_RiskDiscovery - INFO - TabNet training completed
+2026-07-16 00:13:31 - HeartDisease_RiskDiscovery - INFO - TabNet weights saved to artifacts/Model/tabnet/fold_2/model.weights.h5 (weights only format: .weights.h5)
+2026-07-16 00:13:32 - HeartDisease_RiskDiscovery - INFO - TabNet initialized: input_dim=19, params={'n_d': 12, 'n_a': 12, 'n_steps': 4, 'gamma': 1.625957341248133, 'lambda_sparse': 0.0005927172136384618, 'batch_size': 128, 'epochs': 80, 'lr': 0.0024260876636955963, 'dropout': 0.15580833938492766}
+2026-07-16 00:13:32 - HeartDisease_RiskDiscovery - INFO - Training TabNet on 44795 samples
+2026-07-16 00:13:53 - HeartDisease_RiskDiscovery - INFO - TabNet training completed
+2026-07-16 00:13:54 - HeartDisease_RiskDiscovery - INFO - TabNet weights saved to artifacts/Model/tabnet/fold_3/model.weights.h5 (weights only format: .weights.h5)
+2026-07-16 00:13:54 - HeartDisease_RiskDiscovery - INFO - TabNet initialized: input_dim=19, params={'n_d': 12, 'n_a': 12, 'n_steps': 4, 'gamma': 1.625957341248133, 'lambda_sparse': 0.0005927172136384618, 'batch_size': 128, 'epochs': 80, 'lr': 0.0024260876636955963, 'dropout': 0.15580833938492766}
+2026-07-16 00:13:54 - HeartDisease_RiskDiscovery - INFO - Training TabNet on 44795 samples
+2026-07-16 00:14:36 - HeartDisease_RiskDiscovery - INFO - TabNet training completed
+2026-07-16 00:14:37 - HeartDisease_RiskDiscovery - INFO - TabNet weights saved to artifacts/Model/tabnet/fold_4/model.weights.h5 (weights only format: .weights.h5)
+2026-07-16 00:14:39 - HeartDisease_RiskDiscovery - INFO - TabNet initialized: input_dim=19, params={'n_d': 12, 'n_a': 12, 'n_steps': 4, 'gamma': 1.625957341248133, 'lambda_sparse': 0.0005927172136384618, 'batch_size': 128, 'epochs': 80, 'lr': 0.0024260876636955963, 'dropout': 0.15580833938492766}
+2026-07-16 00:14:39 - HeartDisease_RiskDiscovery - INFO - Training TabNet on 50393 samples
+2026-07-16 00:15:10 - HeartDisease_RiskDiscovery - INFO - TabNet training completed
+2026-07-16 00:15:10 - HeartDisease_RiskDiscovery - INFO - TabNet initialized: input_dim=19, params={'n_d': 12, 'n_a': 12, 'n_steps': 4, 'gamma': 1.625957341248133, 'lambda_sparse': 0.0005927172136384618, 'batch_size': 128, 'epochs': 80, 'lr': 0.0024260876636955963, 'dropout': 0.15580833938492766}
+2026-07-16 00:15:10 - HeartDisease_RiskDiscovery - INFO - Training TabNet on 55993 samples
+2026-07-16 00:15:25 - HeartDisease_RiskDiscovery - INFO - TabNet training completed
+2026-07-16 00:15:25 - HeartDisease_RiskDiscovery - WARNING - Skipping non-numpy mask: <class 'tensorflow.python.framework.ops.SymbolicTensor'>
+2026-07-16 00:15:25 - HeartDisease_RiskDiscovery - WARNING - Skipping non-numpy mask: <class 'tensorflow.python.framework.ops.SymbolicTensor'>
+2026-07-16 00:15:25 - HeartDisease_RiskDiscovery - WARNING - Skipping non-numpy mask: <class 'tensorflow.python.framework.ops.SymbolicTensor'>
+2026-07-16 00:15:25 - HeartDisease_RiskDiscovery - WARNING - Skipping non-numpy mask: <class 'tensorflow.python.framework.ops.SymbolicTensor'>
+2026-07-16 00:15:25 - HeartDisease_RiskDiscovery - WARNING - No valid numpy masks to save
+2026-07-16 00:15:25 - HeartDisease_RiskDiscovery - INFO - TabNet weights saved to artifacts/Model/tabnet/final_model/model.weights.h5 (weights only format: .weights.h5)
