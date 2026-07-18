@@ -31,9 +31,21 @@ with open(data_path, 'r') as f:
 df = pd.read_csv(data_path, sep=delimiter)
 df.columns = [c.strip().lower() for c in df.columns]
 
-# Tạo biến BMI và Pulse Pressure
+# Tạo biến BMI, Pulse Pressure và tuổi (năm)
 df["bmi"] = df["weight"] / ((df["height"]/100)**2)
 df["pulse_pressure"] = df["ap_hi"] - df["ap_lo"]
+# age trong CSV thường tính bằng ngày
+if df["age"].median() > 200:
+    df["age_new"] = (df["age"] / 365.25).astype(int)
+else:
+    df["age_new"] = df["age"].astype(int)
+
+# BMI_State: Normal (18.5–24.9) vs Abnormal (thiếu cân / thừa cân / béo phì)
+df["BMI_State"] = np.where(
+    (df["bmi"] >= 18.5) & (df["bmi"] < 25.0),
+    "Normal",
+    "Abnormal",
+)
 
 # Helper: Vẽ xu hướng tỷ lệ mắc bệnh tim theo biến
 def cardio_rate_by_feature(df, feature, bins, xlabel, filename):
@@ -87,6 +99,142 @@ plt.tight_layout()
 plt.savefig(str(output_dir / "EDA_TrendOverview.png"), dpi=200)
 # plt.show()  # Comment out to avoid blocking when running as script
 plt.close()
+
+# --- Tỷ lệ / phân bố CVD theo độ tuổi (countplot + đường xu hướng cardio=1)
+def plot_cardio_by_age(df: pd.DataFrame, out_path: str):
+    """
+    Grouped countplot theo age_new, hue=cardio, kèm đường làm mượt số lượng cardio=1.
+    """
+    plot_df = df[df["cardio"].isin([0, 1])].copy()
+    order = sorted(plot_df["age_new"].unique())
+
+    fig, ax = plt.subplots(figsize=(12, 5), dpi=120)
+    sns.countplot(
+        data=plot_df,
+        x="age_new",
+        hue="cardio",
+        order=order,
+        palette={0: "#2E8B57", 1: "#E67E22"},
+        ax=ax,
+    )
+
+    # Đường xu hướng theo số lượng cardio=1 tại mỗi tuổi
+    counts_1 = (
+        plot_df.loc[plot_df["cardio"] == 1, "age_new"]
+        .value_counts()
+        .reindex(order)
+        .fillna(0)
+        .astype(float)
+        .values
+    )
+    x_pos = np.arange(len(order), dtype=float)
+    if len(order) >= 4 and counts_1.sum() > 0:
+        deg = min(5, len(order) - 1)
+        coef = np.polyfit(x_pos, counts_1, deg=deg)
+        x_smooth = np.linspace(x_pos.min(), x_pos.max(), 300)
+        y_smooth = np.polyval(coef, x_smooth)
+        y_smooth = np.clip(y_smooth, 0, None)
+        ax.plot(x_smooth, y_smooth, color="#8B0000", linewidth=2.2, label="Xu hướng cardio=1")
+
+    ax.set_title("Tỷ lệ mắc bệnh tim mạch theo độ tuổi")
+    ax.set_xlabel("age_new")
+    ax.set_ylabel("count")
+    ax.grid(axis="y", alpha=0.3)
+    ax.legend(title="cardio", loc="upper right", frameon=False)
+    ax.text(
+        0.02,
+        0.95,
+        "Tỉ lệ CVD tăng dần từ tuổi trung niên",
+        transform=ax.transAxes,
+        color="red",
+        fontsize=11,
+        fontweight="bold",
+        va="top",
+        ha="left",
+    )
+
+    # Tránh chồng chữ khi nhiều tuổi
+    if len(order) > 20:
+        for i, label in enumerate(ax.get_xticklabels()):
+            if i % 2 != 0:
+                label.set_visible(False)
+
+    fig.tight_layout()
+    fig.savefig(out_path, dpi=150)
+    plt.close(fig)
+
+
+plot_cardio_by_age(df, str(output_dir / "cardio_by_age.png"))
+
+
+def plot_cardio_by_bmi_state(df: pd.DataFrame, out_path: str):
+    """
+    Countplot BMI_State (Normal/Abnormal) x cardio, kèm mũi tên xu hướng và chú thích nguy cơ.
+    """
+    plot_df = df[df["cardio"].isin([0, 1])].copy()
+    order = ["Normal", "Abnormal"]
+    plot_df = plot_df[plot_df["BMI_State"].isin(order)]
+
+    fig, ax = plt.subplots(figsize=(8, 5), dpi=120)
+    sns.countplot(
+        data=plot_df,
+        x="BMI_State",
+        hue="cardio",
+        order=order,
+        hue_order=[0, 1],
+        palette={0: "#2E8B57", 1: "#E67E22"},
+        ax=ax,
+    )
+
+    # Lấy tâm đỉnh từng cột từ patches (thứ tự: Normal/0, Normal/1, Abnormal/0, Abnormal/1)
+    bar_tops = []
+    for patch in ax.patches:
+        width = patch.get_width()
+        height = patch.get_height()
+        if width <= 0 or height <= 0:
+            continue
+        x_center = patch.get_x() + width / 2.0
+        bar_tops.append((x_center, height))
+    bar_tops = sorted(bar_tops, key=lambda t: t[0])
+
+    if len(bar_tops) >= 4:
+        (x_n0, y_n0), (x_n1, y_n1), (x_a0, y_a0), (x_a1, y_a1) = bar_tops[:4]
+        ax.annotate(
+            "",
+            xy=(x_a0, y_a0),
+            xytext=(x_n0, y_n0),
+            arrowprops=dict(arrowstyle="->", color="#1f77b4", lw=2.0),
+        )
+        ax.annotate(
+            "",
+            xy=(x_a1, y_a1),
+            xytext=(x_n1, y_n1),
+            arrowprops=dict(arrowstyle="->", color="#c0392b", lw=2.5),
+        )
+
+    ax.set_title("Nguy cơ CVD theo trạng thái BMI")
+    ax.set_xlabel("BMI_State")
+    ax.set_ylabel("count")
+    ax.grid(axis="y", alpha=0.3)
+    ax.legend(title="cardio", loc="upper left", frameon=False)
+    ax.text(
+        0.98,
+        0.95,
+        "Người có BMI bất thường thì nguy cơ CVD tăng",
+        transform=ax.transAxes,
+        color="red",
+        fontsize=11,
+        fontweight="bold",
+        va="top",
+        ha="right",
+    )
+
+    fig.tight_layout()
+    fig.savefig(out_path, dpi=150)
+    plt.close(fig)
+
+
+plot_cardio_by_bmi_state(df, str(output_dir / "cardio_by_bmi_state.png"))
 
 """
 Vẽ 2 biểu đồ EDA cho biến ordinal (1–3) với đường xu hướng:

@@ -128,6 +128,9 @@ make discover
 CONFIG=configs/default.yaml   # hoặc fast.yaml / no_hpo.yaml
 
 python -m src.data_understanding --config $CONFIG
+#  EDA Chart cho báo cáo.
+python  src/EDA-Chart.py
+
 python -m src.preprocessing --config $CONFIG
 
 python -m src.feature_engineering --config $CONFIG --model-type rf
