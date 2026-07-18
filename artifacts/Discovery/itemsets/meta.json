@@ -25,25 +25,25 @@
     "lifestyle_risk"
   ],
   "thresholds": [
-    0.39606655687858994,
-    0.4356788054915989,
-    0.12066592719066774,
-    0.05723219811846271,
-    0.10661677805111117,
-    0.11205520314006681,
-    0.08990426614027762,
-    0.4826237117559098,
-    0.0865452489898365,
-    0.37853006031906355,
-    0.06031345278165819,
-    0.21966372678139667,
-    0.63790525234109,
-    0.7408007201450881,
-    0.5041256676494182,
-    0.09399222187684514,
-    0.07385663425801389,
-    0.6745142688341701,
-    0.04714491879779712
+    0.13690121337266786,
+    0.343748966587234,
+    0.11179470358666306,
+    0.222712850973796,
+    0.14742445061036707,
+    0.07699884436978505,
+    0.08938274846467054,
+    0.4842505983836434,
+    0.10190558976733059,
+    0.201224723831539,
+    0.06677247752947026,
+    0.24728247302311798,
+    0.5562696750904459,
+    0.6460166474897039,
+    0.4288039462267229,
+    0.11328609312142322,
+    0.10990027112263333,
+    0.5743562450142395,
+    0.1341660702392462
   ],
   "n_samples": 55993,
   "n_features": 19,
@@ -55,10 +55,10 @@
     "4": 11198
   },
   "sources": [
-    "/Users/thanhloi/Workings/DTU-ITF/CardiovascularRiskDetectionSystem/artifacts/Interpretation/attention/tabnet/fold_0/attention_per_sample.npy",
-    "/Users/thanhloi/Workings/DTU-ITF/CardiovascularRiskDetectionSystem/artifacts/Interpretation/attention/tabnet/fold_1/attention_per_sample.npy",
-    "/Users/thanhloi/Workings/DTU-ITF/CardiovascularRiskDetectionSystem/artifacts/Interpretation/attention/tabnet/fold_2/attention_per_sample.npy",
-    "/Users/thanhloi/Workings/DTU-ITF/CardiovascularRiskDetectionSystem/artifacts/Interpretation/attention/tabnet/fold_3/attention_per_sample.npy",
-    "/Users/thanhloi/Workings/DTU-ITF/CardiovascularRiskDetectionSystem/artifacts/Interpretation/attention/tabnet/fold_4/attention_per_sample.npy"
+    "/home/loint/Workings/InternalProjects/DataAnalysis/CardiovascularRiskDetectionSystem/artifacts/Interpretation/attention/tabnet/fold_0/attention_per_sample.npy",
+    "/home/loint/Workings/InternalProjects/DataAnalysis/CardiovascularRiskDetectionSystem/artifacts/Interpretation/attention/tabnet/fold_1/attention_per_sample.npy",
+    "/home/loint/Workings/InternalProjects/DataAnalysis/CardiovascularRiskDetectionSystem/artifacts/Interpretation/attention/tabnet/fold_2/attention_per_sample.npy",
+    "/home/loint/Workings/InternalProjects/DataAnalysis/CardiovascularRiskDetectionSystem/artifacts/Interpretation/attention/tabnet/fold_3/attention_per_sample.npy",
+    "/home/loint/Workings/InternalProjects/DataAnalysis/CardiovascularRiskDetectionSystem/artifacts/Interpretation/attention/tabnet/fold_4/attention_per_sample.npy"
   ]
 }

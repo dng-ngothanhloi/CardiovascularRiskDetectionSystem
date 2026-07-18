@@ -1,12 +1,12 @@
 {
-  "start_time": "2026-07-16T00:10:15.314145",
+  "start_time": "2026-07-16T08:25:25.183749",
   "model_name": "tabnet",
   "joint_training": false,
   "status": "completed",
   "error": null,
   "error_traceback": null,
-  "end_time": "2026-07-16T00:15:27.222767",
-  "duration_seconds": 311.908622,
-  "duration_minutes": 5.198477033333333,
-  "duration_hours": 0.08664128388888888
+  "end_time": "2026-07-16T08:30:30.082271",
+  "duration_seconds": 304.898522,
+  "duration_minutes": 5.081642033333334,
+  "duration_hours": 0.0846940338888889
 }

@@ -1,8 +1,8 @@
 {
   "use_max_depth": true,
-  "max_depth": 9,
-  "use_max_features_cat": false,
-  "max_features_float": 0.307261813931645,
-  "n_estimators": 1050,
-  "min_samples_leaf": 2
+  "max_depth": 11,
+  "use_max_features_cat": true,
+  "max_features": "sqrt",
+  "n_estimators": 850,
+  "min_samples_leaf": 7
 }

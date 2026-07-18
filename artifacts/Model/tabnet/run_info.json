@@ -1,6 +1,6 @@
 {
-  "python_version": "3.11.13 (main, Sep  2 2025, 14:10:56) [Clang 20.1.4 ]",
-  "platform": "macOS-26.2-arm64-arm-64bit",
+  "python_version": "3.10.12 (main, Jun 22 2026, 18:55:27) [GCC 11.4.0]",
+  "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.35",
   "numpy_version": "1.26.4",
   "sklearn_version": "1.7.2",
   "tensorflow_version": "2.17.0",

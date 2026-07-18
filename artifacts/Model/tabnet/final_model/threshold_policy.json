@@ -1,7 +1,7 @@
 {
   "method": "maximize_f1_on_oof",
-  "threshold": 0.3599999999999999,
-  "f1_oof": 0.7426169997056611,
+  "threshold": 0.34999999999999987,
+  "f1_oof": 0.7426113949427666,
   "source": "oof_predictions",
   "anti_leak": "Threshold not selected on Test"
 }

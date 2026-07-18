@@ -1,12 +1,12 @@
 {
-  "start_time": "2026-07-15T14:19:35.160176",
+  "start_time": "2026-07-16T08:17:11.259072",
   "model_name": "rf",
   "joint_training": false,
   "status": "completed",
   "error": null,
   "error_traceback": null,
-  "end_time": "2026-07-15T14:31:16.314640",
-  "duration_seconds": 701.154464,
-  "duration_minutes": 11.685907733333332,
-  "duration_hours": 0.1947651288888889
+  "end_time": "2026-07-16T08:25:23.242771",
+  "duration_seconds": 491.983699,
+  "duration_minutes": 8.199728316666667,
+  "duration_hours": 0.13666213861111112
 }

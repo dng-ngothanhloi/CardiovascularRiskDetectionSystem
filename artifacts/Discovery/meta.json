@@ -1,10 +1,10 @@
 {
   "random_seed": 42,
   "paths": {
-    "attention_dir": "/Users/thanhloi/Workings/DTU-ITF/CardiovascularRiskDetectionSystem/artifacts/Interpretation/attention/tabnet",
-    "discovery_dir": "/Users/thanhloi/Workings/DTU-ITF/CardiovascularRiskDetectionSystem/artifacts/Discovery",
-    "fe_dir": "/Users/thanhloi/Workings/DTU-ITF/CardiovascularRiskDetectionSystem/artifacts/fe",
-    "tabnet_model_dir": "/Users/thanhloi/Workings/DTU-ITF/CardiovascularRiskDetectionSystem/artifacts/Model/tabnet"
+    "attention_dir": "/home/loint/Workings/InternalProjects/DataAnalysis/CardiovascularRiskDetectionSystem/artifacts/Interpretation/attention/tabnet",
+    "discovery_dir": "/home/loint/Workings/InternalProjects/DataAnalysis/CardiovascularRiskDetectionSystem/artifacts/Discovery",
+    "fe_dir": "/home/loint/Workings/InternalProjects/DataAnalysis/CardiovascularRiskDetectionSystem/artifacts/fe",
+    "tabnet_model_dir": "/home/loint/Workings/InternalProjects/DataAnalysis/CardiovascularRiskDetectionSystem/artifacts/Model/tabnet"
   },
   "attention_to_item": {
     "agg": "mean",
